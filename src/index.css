@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Onest";
+    src: url("/fonts/Onest.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "Boldonse";
+    src: url("/fonts/Boldonse.woff2") format("woff2");
+  }
+}
