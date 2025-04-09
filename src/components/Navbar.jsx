@@ -20,7 +20,7 @@ const Navbar = () => {
       >
         {/* Logo */}
         <h2
-          className={`text-xl lg:text-2xl font-medium z-50 transition-colors duration-300 ${
+          className={`text-xl lg:text-2xl font-medium z-50 transition-colors duration-200 ${
             navOpen ? "text-stone-800" : "text-white"
           }`}
         >
@@ -38,19 +38,19 @@ const Navbar = () => {
         {/* Hamburger Menu Icon */}
         <div
           onClick={toggleNav}
-          className={`p-4 px-2.5 rounded-full flex lg:hidden gap-2 flex-col z-50 cursor-pointer transition-colors duration-300 ${
+          className={`p-4 px-2.5 rounded-full flex lg:hidden gap-2 flex-col z-50 cursor-pointer transition-colors duration-200 ${
             navOpen ? "bg-stone-800" : "bg-white"
           }`}
         >
           <div
-            className={`w-6 h-[0.8px] transition-all duration-300 ${
+            className={`w-6 h-[0.8px] transition-all duration-200 ${
               navOpen
                 ? "bg-white rotate-[225deg] translate-y-1"
                 : "bg-stone-800"
             }`}
           ></div>
           <div
-            className={`w-6 h-[0.8px] transition-all duration-300 ${
+            className={`w-6 h-[0.8px] transition-all duration-200 ${
               navOpen
                 ? "bg-white -rotate-[225deg] -translate-y-1"
                 : "bg-stone-800"
