@@ -23,40 +23,46 @@ const Home = () => {
       image: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23",
     },
     {
+      title: "Shimla Tour Package",
+      price: "5499",
+      rating: "4.8/5",
+      image: "https://images.unsplash.com/photo-1733292908042-7da9695834b3",
+    },
+    {
       title: "Goa Tour Package",
       price: "7499",
       rating: "4.7/5",
-      image: "https://images.unsplash.com/photo-1518684079-3c830dcef090",
+      image: "https://images.unsplash.com/photo-1725006136539-46bef885df06",
     },
     {
       title: "Nainital Tour Package",
       price: "6499",
       rating: "4.9/5",
-      image: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23",
+      image: "https://images.unsplash.com/photo-1626014303757-6366ef55c4ab",
     },
     {
-      title: "Shimla Tour Package",
+      title: "Shimla & Manali Tour Package",
       price: "10499",
       rating: "4.8/5",
-      image: "https://images.unsplash.com/photo-1518684079-3c830dcef090",
+      image: "https://images.unsplash.com/photo-1518196744992-78329b7b6614",
     },
     {
       title: "Kashmir Tour Package",
       price: "8999",
       rating: "4.8/5",
-      image: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23",
+      image: "https://images.unsplash.com/photo-1664212251086-fad4d6880011",
     },
     {
       title: "Uttarakhand Tour Package",
       price: "15499",
       rating: "4.8/5",
-      image: "https://images.unsplash.com/photo-1518684079-3c830dcef090",
+      image: "https://images.unsplash.com/photo-1610730349385-70d2a67a61fa",
     },
     {
       title: "Haridwar Tour Package",
       price: "5499",
       rating: "4.8/5",
-      image: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23",
+      image: "https://images.unsplash.com/photo-1622611908679-cbeda47d9404",
     },
   ];
 
@@ -104,14 +110,14 @@ const Home = () => {
           <div className="flex gap-2 lg:gap-4">
             {/* Previous Button */}
             <button
-              className="p-2 lg:p-4 text-2xl rounded-full text-white bg-stone-800"
+              className="p-2.5 lg:p-4 text-2xl rounded-full text-white bg-stone-800"
               onClick={() => swiperRef.current?.slidePrev()}
             >
               <ChevronLeft />
             </button>
             {/* Next Button */}
             <button
-              className="p-2 lg:p-4 text-2xl rounded-full text-white bg-stone-800"
+              className="p-2.5 lg:p-4 text-2xl rounded-full text-white bg-stone-800"
               onClick={() => swiperRef.current?.slideNext()}
             >
               <ChevronRight />
@@ -144,14 +150,15 @@ const Home = () => {
         >
           {packages.map((pkg, index) => (
             <SwiperSlide key={index}>
-              <div className="w-full h-[30vh] lg:h-[40vh] rounded-xl overflow-hidden">
+              <div className="w-full h-[35vh] lg:h-[40vh] rounded-xl overflow-hidden">
                 <img
                   src={pkg.image}
                   alt={pkg.title}
+                  loading="lazy"
                   className="w-full h-full object-cover object-center"
                 />
               </div>
-              <div className="p-4 px-0 flex gap-2 flex-col font-[Onest]">
+              <div className="pt-4 px-0 flex gap-2 flex-col font-[Onest]">
                 <h2 className="text-xl font-bold leading-none">{pkg.title}</h2>
                 <div className="flex gap-6 justify-between">
                   <div className="flex gap-[4px] items-center">

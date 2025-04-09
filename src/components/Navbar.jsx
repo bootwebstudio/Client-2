@@ -43,14 +43,14 @@ const Navbar = () => {
           }`}
         >
           <div
-            className={`w-6 h-[0.8px] transition-all duration-200 ${
+            className={`w-6 h-[0.85px] transition-all duration-200 ${
               navOpen
                 ? "bg-white rotate-[225deg] translate-y-1"
                 : "bg-stone-800"
             }`}
           ></div>
           <div
-            className={`w-6 h-[0.8px] transition-all duration-200 ${
+            className={`w-6 h-[0.85px] transition-all duration-200 ${
               navOpen
                 ? "bg-white -rotate-[225deg] -translate-y-1"
                 : "bg-stone-800"
