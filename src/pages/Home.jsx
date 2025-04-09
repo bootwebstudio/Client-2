@@ -86,7 +86,7 @@ const Home = () => {
           <h2 className="text-[14vw] lg:text-[12vw] leading-none lg:leading-tight">
             ADVENTURE
           </h2>
-          <p className="w-full lg:w-[60%] p-6 lg:px-0 text-lg lg:text-xl text-center leading-tight font-medium font-[Onest]">
+          <p className="w-full lg:w-[60%] p-6 lg:px-0 text-lg lg:text-xl text-center leading-tight font-medium font-[Poppins]">
             Who says dream holidays have to be expensive? Enjoy scenic
             destinations, comfy stays, and unforgettable memories — all within
             your budget. Start your adventure today with RK Travels!
@@ -100,7 +100,7 @@ const Home = () => {
       </div>
 
       {/* Packages Section */}
-      <div className="w-full max-h-screen p-6 lg:p-12 flex flex-col gap-6 lg:gap-12">
+      <div className="w-full max-h-screen p-8 px-6 lg:p-12 flex flex-col gap-8 lg:gap-12">
         <div className="w-full flex items-center justify-between">
           <h2 className="text-2xl lg:text-4xl leading-none font-bold flex gap-2 lg:gap-4 flex-col lg:flex-row">
             <span>POPULAR</span>
@@ -158,7 +158,7 @@ const Home = () => {
                   className="w-full h-full object-cover object-center"
                 />
               </div>
-              <div className="pt-4 px-0 flex gap-2 flex-col font-[Onest]">
+              <div className="pt-4 px-0 flex gap-2 flex-col font-[Poppins]">
                 <h2 className="text-xl font-bold leading-none">{pkg.title}</h2>
                 <div className="flex gap-6 justify-between">
                   <div className="flex gap-[4px] items-center">
@@ -181,11 +181,11 @@ const Home = () => {
       </div>
 
       {/* About Section */}
-      <div className="w-full max-h-screen p-6 lg:p-12 flex flex-col items-center gap-6 lg:gap-12">
+      <div className="w-full max-h-screen p-8 px-6 lg:p-12 flex flex-col items-center gap-8 lg:gap-12">
         <h2 className="text-2xl lg:text-4xl leading-none font-bold">
           ABOUT US
         </h2>
-        <p className="w-full lg:w-[60%] text-lg lg:text-xl text-center leading-tight font-medium font-[Onest]">
+        <p className="w-full lg:w-[60%] text-lg lg:text-xl text-center leading-tight font-medium font-[Poppins]">
           RK Travels makes your dream vacations easy and affordable. From
           mountains to beaches, we plan every trip with care so you can travel
           stress-free and enjoy every moment.
@@ -200,9 +200,11 @@ const Home = () => {
             <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-none font-bold text-blue-500">
               100+
             </h2>
-            <h4 className="text-lg xl:text-2xl font-bold xl:leading-none">happy customers</h4>
+            <h4 className="text-lg xl:text-2xl font-bold xl:leading-none">
+              happy customers
+            </h4>
           </div>
-          <div className="py-8 md:px-8 border-y-2 md:border-x-2 border-stone-400 flex gap-4 md:gap-6 flex-col items-center">
+          <div className="py-8 md:px-8 border-y-2 md:border-y-0 md:border-x-2 border-stone-400 flex gap-4 md:gap-6 flex-col items-center">
             <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-none font-bold text-blue-500">
               03+
             </h2>
