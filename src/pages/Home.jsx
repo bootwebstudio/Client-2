@@ -102,7 +102,7 @@ const Home = () => {
       {/* Packages Section */}
       <div className="w-full max-h-screen p-6 lg:p-12 flex flex-col gap-6 lg:gap-12">
         <div className="w-full flex items-center justify-between">
-          <h2 className="text-2xl lg:text-4xl font-bold flex gap-2 lg:gap-4 flex-col lg:flex-row">
+          <h2 className="text-2xl lg:text-4xl leading-none font-bold flex gap-2 lg:gap-4 flex-col lg:flex-row">
             <span>POPULAR</span>
             <span>PACKAGES</span>
           </h2>
@@ -178,6 +178,47 @@ const Home = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+      </div>
+
+      {/* About Section */}
+      <div className="w-full max-h-screen p-6 lg:p-12 flex flex-col items-center gap-6 lg:gap-12">
+        <h2 className="text-2xl lg:text-4xl leading-none font-bold">
+          ABOUT US
+        </h2>
+        <p className="w-full lg:w-[60%] text-lg lg:text-xl text-center leading-tight font-medium font-[Onest]">
+          RK Travels makes your dream vacations easy and affordable. From
+          mountains to beaches, we plan every trip with care so you can travel
+          stress-free and enjoy every moment.
+          <br />
+          <br />
+          With trusted service and exciting packages, we help you explore
+          India's best spots without breaking the bank. Travel smart. Travel
+          happy. Travel with RK Travels.
+        </p>
+        <div className="w-full xl:w-[80%] h-[55vh] md:h-[20vh] xl:h-[35vh] rounded-xl flex flex-col md:flex-row gap-8 items-center justify-center bg-stone-800/15">
+          <div className="flex gap-4 md:gap-6 flex-col items-center">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-none font-bold text-blue-500">
+              100+
+            </h2>
+            <h4 className="text-lg xl:text-2xl font-bold xl:leading-none">happy customers</h4>
+          </div>
+          <div className="py-8 md:px-8 border-y-2 md:border-x-2 border-stone-400 flex gap-4 md:gap-6 flex-col items-center">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-none font-bold text-blue-500">
+              03+
+            </h2>
+            <h4 className="text-lg xl:text-2xl font-bold xl:leading-none">
+              years experience
+            </h4>
+          </div>
+          <div className="flex gap-4 md:gap-6 flex-col items-center">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-none font-bold text-blue-500">
+              100%
+            </h2>
+            <h4 className="text-lg xl:text-2xl font-bold xl:leading-none">
+              clients satisfaction
+            </h4>
+          </div>
+        </div>
       </div>
     </div>
   );
