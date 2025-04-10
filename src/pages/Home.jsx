@@ -94,9 +94,9 @@ const Home = () => {
   };
 
   useEffect(() => {
-    if (!swiperRef.current) return;
+    if (!testimonialsSwiperRef.current) return;
 
-    swiperRef.current.on("slideChange", () => {
+    testimonialsSwiperRef.current.on("slideChange", () => {
       videoRefs.current.forEach((video) => {
         if (video) video.muted = true;
       });
