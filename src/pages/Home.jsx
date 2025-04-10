@@ -23,7 +23,7 @@ import Testimonial6 from "../assets/Testimonial6.mp4";
 import Testimonial7 from "../assets/Testimonial7.mp4";
 
 const Home = () => {
-  const swiperRef = useRef(null);
+  const packagesSwiperRef = useRef(null);
 
   const packages = [
     {
@@ -76,6 +76,7 @@ const Home = () => {
     },
   ];
 
+  const testimonialsSwiperRef = useRef(null);
   const videoRefs = useRef([]);
   const currentPlayingIndex = useRef(null);
 
@@ -158,14 +159,14 @@ const Home = () => {
             {/* Previous Button */}
             <button
               className="p-2.5 lg:p-4 text-2xl rounded-full text-white bg-stone-800"
-              onClick={() => swiperRef.current?.slidePrev()}
+              onClick={() => packagesSwiperRef.current?.slidePrev()}
             >
               <ChevronLeft />
             </button>
             {/* Next Button */}
             <button
               className="p-2.5 lg:p-4 text-2xl rounded-full text-white bg-stone-800"
-              onClick={() => swiperRef.current?.slideNext()}
+              onClick={() => packagesSwiperRef.current?.slideNext()}
             >
               <ChevronRight />
             </button>
@@ -191,7 +192,7 @@ const Home = () => {
             },
           }}
           onSwiper={(swiper) => {
-            swiperRef.current = swiper;
+            packagesSwiperRef.current = swiper;
           }}
           className="w-full"
         >
@@ -282,14 +283,14 @@ const Home = () => {
             {/* Previous Button */}
             <button
               className="p-2.5 lg:p-4 text-2xl rounded-full text-white bg-stone-800"
-              onClick={() => swiperRef.current?.slidePrev()}
+              onClick={() => testimonialsSwiperRef.current?.slidePrev()}
             >
               <ChevronLeft />
             </button>
             {/* Next Button */}
             <button
               className="p-2.5 lg:p-4 text-2xl rounded-full text-white bg-stone-800"
-              onClick={() => swiperRef.current?.slideNext()}
+              onClick={() => testimonialsSwiperRef.current?.slideNext()}
             >
               <ChevronRight />
             </button>
@@ -306,7 +307,7 @@ const Home = () => {
             1024: { slidesPerView: 2 },
             1280: { slidesPerView: 4 },
           }}
-          onSwiper={(swiper) => (swiperRef.current = swiper)}
+          onSwiper={(swiper) => (testimonialsSwiperRef.current = swiper)}
           className="w-full"
         >
           {testimonials.map((src, index) => (
