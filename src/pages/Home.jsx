@@ -148,7 +148,7 @@ const Home = () => {
       </div>
 
       {/* Packages Section */}
-      <div className="w-full max-h-screen p-8 px-6 pb-0 lg:p-12 lg:pb-0 flex flex-col gap-8 lg:gap-12">
+      <div className="w-full max-h-screen p-10 px-6 pb-0 lg:p-14 lg:pb-0 flex flex-col gap-10 lg:gap-12">
         <div className="w-full flex items-center justify-between">
           <h2 className="text-2xl lg:text-4xl leading-none font-bold flex gap-2 lg:gap-4 flex-col lg:flex-row">
             <span>POPULAR</span>
@@ -272,7 +272,7 @@ const Home = () => {
       </div>
 
       {/* Testimonials Section */}
-      <div className="w-full max-h-screen p-10 px-6 pb-0 lg:p-14 lg:pb-0 flex flex-col gap-8 lg:gap-12">
+      <div className="w-full max-h-screen p-12 px-6 pb-0 lg:p-16 lg:pb-0 flex flex-col gap-10 lg:gap-12">
         <div className="w-full flex items-center justify-between">
           <h2 className="text-2xl lg:text-4xl leading-none font-bold flex gap-2 lg:gap-4 flex-col lg:flex-row">
             <span>CLIENT</span>
