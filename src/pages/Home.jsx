@@ -1,5 +1,6 @@
 import React from "react";
 import { useRef } from "react";
+import { useEffect } from "react";
 import { Swiper } from "swiper/react";
 import { SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
@@ -11,6 +12,15 @@ import Navbar from "../components/Navbar";
 // Icons
 import { ChevronLeft } from "lucide-react";
 import { ChevronRight } from "lucide-react";
+
+// Testimonials
+import Testimonial1 from "../assets/Testimonial1.mp4";
+import Testimonial2 from "../assets/Testimonial2.mp4";
+import Testimonial3 from "../assets/Testimonial3.mp4";
+import Testimonial4 from "../assets/Testimonial4.mp4";
+import Testimonial5 from "../assets/Testimonial5.mp4";
+import Testimonial6 from "../assets/Testimonial6.mp4";
+import Testimonial7 from "../assets/Testimonial7.mp4";
 
 const Home = () => {
   const swiperRef = useRef(null);
@@ -64,6 +74,43 @@ const Home = () => {
       rating: "4.8/5",
       image: "https://images.unsplash.com/photo-1622611908679-cbeda47d9404",
     },
+  ];
+
+  const videoRefs = useRef([]);
+  const currentPlayingIndex = useRef(null);
+
+  const handleVideoClick = (index) => {
+    videoRefs.current.forEach((video, i) => {
+      if (video) {
+        if (i === index) {
+          video.muted = !video.muted;
+          currentPlayingIndex.current = video.muted ? null : i;
+        } else {
+          video.muted = true;
+        }
+      }
+    });
+  };
+
+  useEffect(() => {
+    if (!swiperRef.current) return;
+
+    swiperRef.current.on("slideChange", () => {
+      videoRefs.current.forEach((video) => {
+        if (video) video.muted = true;
+      });
+      currentPlayingIndex.current = null;
+    });
+  }, []);
+
+  const testimonials = [
+    Testimonial1,
+    Testimonial2,
+    Testimonial3,
+    Testimonial4,
+    Testimonial5,
+    Testimonial6,
+    Testimonial7,
   ];
 
   return (
@@ -181,7 +228,7 @@ const Home = () => {
       </div>
 
       {/* About Section */}
-      <div className="w-full max-h-screen p-10 px-6 lg:p-14 flex flex-col items-center gap-8 lg:gap-12">
+      <div className="w-full max-h-screen p-10 px-6 pb-0 lg:p-14 lg:pb-0 flex flex-col items-center gap-8 lg:gap-12">
         <h2 className="text-2xl lg:text-4xl leading-none font-bold">
           ABOUT US
         </h2>
@@ -195,7 +242,7 @@ const Home = () => {
           India's best spots without breaking the bank. Travel smart. Travel
           happy. Travel with RK Travels.
         </p>
-        <div className="w-full xl:w-[80%] h-[55vh] md:h-[20vh] xl:h-[35vh] rounded-xl flex flex-col md:flex-row gap-8 items-center justify-center bg-stone-800/15">
+        <div className="w-full xl:w-[80%] p-12 px-0 rounded-xl flex flex-col md:flex-row gap-8 items-center justify-center bg-stone-800/15">
           <div className="flex gap-4 md:gap-6 flex-col items-center">
             <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-none font-bold text-blue-500">
               100+
@@ -221,6 +268,66 @@ const Home = () => {
             </h4>
           </div>
         </div>
+      </div>
+
+      {/* Testimonials Section */}
+      <div className="w-full max-h-screen p-10 px-6 pb-0 lg:p-14 lg:pb-0 flex flex-col gap-8 lg:gap-12">
+        <div className="w-full flex items-center justify-between">
+          <h2 className="text-2xl lg:text-4xl leading-none font-bold flex gap-2 lg:gap-4 flex-col lg:flex-row">
+            <span>CLIENT</span>
+            <span>REVIEWS</span>
+          </h2>
+          {/* Slider Controls */}
+          <div className="flex gap-2 lg:gap-4">
+            {/* Previous Button */}
+            <button
+              className="p-2.5 lg:p-4 text-2xl rounded-full text-white bg-stone-800"
+              onClick={() => swiperRef.current?.slidePrev()}
+            >
+              <ChevronLeft />
+            </button>
+            {/* Next Button */}
+            <button
+              className="p-2.5 lg:p-4 text-2xl rounded-full text-white bg-stone-800"
+              onClick={() => swiperRef.current?.slideNext()}
+            >
+              <ChevronRight />
+            </button>
+          </div>
+        </div>
+
+        <Swiper
+          modules={[Navigation]}
+          spaceBetween={48}
+          slidesPerView={4}
+          breakpoints={{
+            0: { slidesPerView: 1 },
+            640: { slidesPerView: 2 },
+            1024: { slidesPerView: 2 },
+            1280: { slidesPerView: 4 },
+          }}
+          onSwiper={(swiper) => (swiperRef.current = swiper)}
+          className="w-full"
+        >
+          {testimonials.map((src, index) => (
+            <SwiperSlide key={index}>
+              <div className="w-full h-[60vh] rounded-xl overflow-hidden">
+                <video
+                  ref={(el) => (videoRefs.current[index] = el)}
+                  className="w-full h-full object-cover object-center cursor-pointer"
+                  src={src}
+                  loop
+                  muted
+                  preload="none"
+                  playsInline
+                  autoPlay
+                  loading="lazy"
+                  onClick={() => handleVideoClick(index)}
+                />
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </div>
   );
