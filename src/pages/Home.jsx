@@ -11,17 +11,27 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 // Icons
-import { ChevronLeft } from "lucide-react";
+import { ChevronLeft, Turtle } from "lucide-react";
 import { ChevronRight } from "lucide-react";
 
+// Packages
+import Manali from "../assets/images/Manali.webp";
+import Shimla from "../assets/images/Shimla.webp";
+import Goa from "../assets/images/Goa.webp";
+import Nainital from "../assets/images/Nainital.webp";
+import ShimlaManali from "../assets/images/ShimlaManali.webp";
+import Kashmir from "../assets/images/Kashmir.webp";
+import Uttarakhand from "../assets/images/Uttarakhand.webp";
+import Haridwar from "../assets/images/Haridwar.webp";
+
 // Testimonials
-import Testimonial1 from "../assets/Testimonial1.mp4";
-import Testimonial2 from "../assets/Testimonial2.mp4";
-import Testimonial3 from "../assets/Testimonial3.mp4";
-import Testimonial4 from "../assets/Testimonial4.mp4";
-import Testimonial5 from "../assets/Testimonial5.mp4";
-import Testimonial6 from "../assets/Testimonial6.mp4";
-import Testimonial7 from "../assets/Testimonial7.mp4";
+import Testimonial1 from "../assets/media/Testimonial1.mp4";
+import Testimonial2 from "../assets/media/Testimonial2.mp4";
+import Testimonial3 from "../assets/media/Testimonial3.mp4";
+import Testimonial4 from "../assets/media/Testimonial4.mp4";
+import Testimonial5 from "../assets/media/Testimonial5.mp4";
+import Testimonial6 from "../assets/media/Testimonial6.mp4";
+import Testimonial7 from "../assets/media/Testimonial7.mp4";
 
 const Home = () => {
   const packagesSwiperRef = useRef(null);
@@ -29,51 +39,51 @@ const Home = () => {
   const packages = [
     {
       title: "Manali Tour Package",
-      price: "4499",
+      price: 4499,
       rating: "4.8/5",
-      image: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23",
+      image: Manali,
     },
     {
       title: "Shimla Tour Package",
-      price: "5499",
+      price: 5499,
       rating: "4.8/5",
-      image: "https://images.unsplash.com/photo-1733292908042-7da9695834b3",
+      image: Shimla,
     },
     {
       title: "Goa Tour Package",
-      price: "7499",
+      price: 7499,
       rating: "4.7/5",
-      image: "https://images.unsplash.com/photo-1725006136539-46bef885df06",
+      image: Goa,
     },
     {
       title: "Nainital Tour Package",
-      price: "6499",
+      price: 6499,
       rating: "4.9/5",
-      image: "https://images.unsplash.com/photo-1626014303757-6366ef55c4ab",
+      image: Nainital,
     },
     {
       title: "Shimla & Manali Tour Package",
-      price: "10499",
+      price: 10499,
       rating: "4.8/5",
-      image: "https://images.unsplash.com/photo-1518196744992-78329b7b6614",
+      image: ShimlaManali,
     },
     {
       title: "Kashmir Tour Package",
-      price: "8999",
+      price: 8999,
       rating: "4.8/5",
-      image: "https://images.unsplash.com/photo-1664212251086-fad4d6880011",
+      image: Kashmir,
     },
     {
       title: "Uttarakhand Tour Package",
-      price: "15499",
+      price: 15499,
       rating: "4.8/5",
-      image: "https://images.unsplash.com/photo-1610730349385-70d2a67a61fa",
+      image: Uttarakhand,
     },
     {
       title: "Haridwar Tour Package",
-      price: "5499",
+      price: 5499,
       rating: "4.8/5",
-      image: "https://images.unsplash.com/photo-1622611908679-cbeda47d9404",
+      image: Haridwar,
     },
   ];
 
@@ -175,6 +185,7 @@ const Home = () => {
         </div>
 
         <Swiper
+          loop={true}
           modules={[Navigation]}
           spaceBetween={48}
           slidesPerView={4}
@@ -299,6 +310,7 @@ const Home = () => {
         </div>
 
         <Swiper
+          loop={true}
           modules={[Navigation]}
           spaceBetween={48}
           slidesPerView={4}

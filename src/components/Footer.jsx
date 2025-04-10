@@ -6,9 +6,7 @@ const Footer = () => {
       <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8">
         {/* Brand Title */}
         <div className="lg:w-1/2 xl:w-[40%] flex gap-2 flex-col">
-          <h2 className="text-xl lg:text-2xl text-white">
-            RK Travels
-          </h2>
+          <h2 className="text-xl lg:text-2xl text-white">RK Travels</h2>
           <p className="mt-2 text-sm text-stone-300 leading-relaxed">
             Your trusted travel partner for unforgettable journeys across India.
             Affordable packages, personalized service, and memories that last a
