@@ -8,6 +8,7 @@ import "swiper/css";
 
 // Components
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 // Icons
 import { ChevronLeft } from "lucide-react";
@@ -148,7 +149,7 @@ const Home = () => {
       </div>
 
       {/* Packages Section */}
-      <div className="w-full max-h-screen p-10 px-6 pb-0 lg:p-14 lg:pb-0 flex flex-col gap-10 lg:gap-12">
+      <div className="w-full p-10 px-6 pb-0 lg:p-14 lg:pb-0 flex flex-col gap-10 lg:gap-12">
         <div className="w-full flex items-center justify-between">
           <h2 className="text-2xl lg:text-4xl leading-none font-bold flex gap-2 lg:gap-4 flex-col lg:flex-row">
             <span>POPULAR</span>
@@ -229,7 +230,7 @@ const Home = () => {
       </div>
 
       {/* About Section */}
-      <div className="w-full max-h-screen p-10 px-6 pb-0 lg:p-14 lg:pb-0 flex flex-col items-center gap-8 lg:gap-12">
+      <div className="w-full p-10 px-6 pb-0 lg:p-14 lg:pb-0 flex flex-col items-center gap-8 lg:gap-12">
         <h2 className="text-2xl lg:text-4xl leading-none font-bold">
           ABOUT US
         </h2>
@@ -272,7 +273,7 @@ const Home = () => {
       </div>
 
       {/* Testimonials Section */}
-      <div className="w-full max-h-screen p-12 px-6 pb-0 lg:p-16 lg:pb-0 flex flex-col gap-10 lg:gap-12">
+      <div className="w-full p-12 px-6 pb-0 lg:p-16 lg:pb-0 flex flex-col gap-10 lg:gap-12">
         <div className="w-full flex items-center justify-between">
           <h2 className="text-2xl lg:text-4xl leading-none font-bold flex gap-2 lg:gap-4 flex-col lg:flex-row">
             <span>CLIENT</span>
@@ -312,7 +313,7 @@ const Home = () => {
         >
           {testimonials.map((src, index) => (
             <SwiperSlide key={index}>
-              <div className="w-full h-[60vh] rounded-xl overflow-hidden">
+              <div className="w-full h-[60vh] lg:h-[50vh] xl:h-[60vh] rounded-xl overflow-hidden">
                 <video
                   ref={(el) => (videoRefs.current[index] = el)}
                   className="w-full h-full object-cover object-center cursor-pointer"
@@ -330,6 +331,22 @@ const Home = () => {
           ))}
         </Swiper>
       </div>
+
+      {/* CTA Section */}
+      <div className="w-full p-12 px-6 lg:p-14 flex flex-col items-center gap-8 lg:gap-12">
+        <div className="w-full xl:w-[80%] p-8 px-6 md:p-12 rounded-xl flex flex-col gap-8 items-center justify-center bg-stone-800/15">
+          <h2 className="lg:px-12 text-lg lg:text-3xl text-center lg:leading-relaxed">
+            Looking for the perfect trip? Start by exploring all our packages
+            tailored just for you.
+          </h2>
+          <button className="w-full lg:w-fit p-6 px-0 lg:px-16 text-sm lg:text-xl rounded-full text-white bg-stone-800">
+            Discover your perfect trip
+          </button>
+        </div>
+      </div>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };
