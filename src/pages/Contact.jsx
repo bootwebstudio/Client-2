@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-const BOT_TOKEN = "7429642388:AAFEpy0Jubs7UpbgUgyMWV7TkeJK7SdRMhs";
-const CHAT_ID = "-1002386761316";
+const BOT_TOKEN = import.meta.env.VITE_BOT_TOKEN;
+const CHAT_ID = import.meta.env.VITE_CONTACT_CHAT_ID;
 
 const Contact = () => {
   const [formData, setFormData] = useState({

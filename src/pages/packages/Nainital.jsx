@@ -8,8 +8,8 @@ import Footer from "../../components/Footer";
 // Assets
 import Image from "../../assets/images/Nainital.webp";
 
-const BOT_TOKEN = "7429642388:AAFEpy0Jubs7UpbgUgyMWV7TkeJK7SdRMhs";
-const CHAT_ID = "-1002624033406";
+const BOT_TOKEN = import.meta.env.VITE_BOT_TOKEN;
+const CHAT_ID = import.meta.env.VITE_PACKAGES_CHAT_ID;
 
 const Nainital = () => {
   const [formData, setFormData] = useState({
@@ -63,9 +63,9 @@ const Nainital = () => {
       <Navbar />
       <div className="w-full p-10 px-6 lg:p-14 flex flex-col gap-8 lg:gap-12 lg:items-center lg:justify-center lg:text-center">
         <h2 className="text-xl lg:text-4xl text-center leading-none">
-          Nainital Tour 
+          Nainital Tour
         </h2>
-        <div className="w-full h-[35vh] lg:h-[40vh] rounded-md overflow-hidden">
+        <div className="w-full lg:w-1/2 h-[35vh] lg:h-[60vh] rounded-md overflow-hidden">
           <img
             src={Image}
             alt="Nainital tour package"
@@ -74,8 +74,8 @@ const Nainital = () => {
           />
         </div>
         <p className="text-lg lg:text-xl font-medium font-[Poppins] lg:w-[70%]">
-          Escape to the serene hills and sparkling lakes of Nainital with our
-          2 Nights / 3 Days tour package. Whether you're boating on the famous
+          Escape to the serene hills and sparkling lakes of Nainital with our 2
+          Nights / 3 Days tour package. Whether you're boating on the famous
           Naini Lake or exploring scenic spots like Bhimtal and Sattal, this
           quick getaway is packed with peaceful vibes and scenic charm.
         </p>
@@ -86,9 +86,11 @@ const Nainital = () => {
             <p>
               <b>Day 1:</b> <i>Delhi - Nainital</i>
               <br />
-              Pickup from Delhi and scenic drive to Nainital. After hotel check-in
-              and fresh-up, explore Mall Road, Eco Cave Garden, Naini Devi Temple,
-              Naini Lake, Nainital Zoo, and Snow View Point (via Ropeway or Union Taxi at your own cost). Dinner and overnight stay at hotel.
+              Pickup from Delhi and scenic drive to Nainital. After hotel
+              check-in and fresh-up, explore Mall Road, Eco Cave Garden, Naini
+              Devi Temple, Naini Lake, Nainital Zoo, and Snow View Point (via
+              Ropeway or Union Taxi at your own cost). Dinner and overnight stay
+              at hotel.
             </p>
             <br />
             <p>
@@ -138,7 +140,7 @@ const Nainital = () => {
         </div>
 
         <div className="text-lg lg:text-2xl leading-none lg:w-[70%]">
-          Starting from <span className="text-green-600">₹6,499/-</span>
+          Starting from <span className="text-green-600">₹6499/-</span>
         </div>
 
         <form

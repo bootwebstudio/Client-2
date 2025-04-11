@@ -13,7 +13,7 @@ import Nainital from "../assets/images/Nainital.webp";
 import ShimlaManali from "../assets/images/ShimlaManali.webp";
 import Kashmir from "../assets/images/Kashmir.webp";
 import Uttarakhand from "../assets/images/Uttarakhand.webp";
-import Haridwar from "../assets/images/Haridwar.webp";
+import HaridwarRishikesh from "../assets/images/HaridwarRishikesh.webp";
 
 // Packages Data
 const packages = [
@@ -70,8 +70,8 @@ const packages = [
     title: "Haridwar - Rishikesh Tour Package",
     price: 5499,
     rating: "4.8/5",
-    image: Haridwar,
-    link: "/packages/haridwar",
+    image: HaridwarRishikesh,
+    link: "/packages/haridwar-rishikesh",
   },
 ];
 

@@ -6,12 +6,12 @@ import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 
 // Assets
-import Image from "../../assets/images/ShimlaManali.webp";
+import Image from "../../assets/images/HaridwarRishikesh.webp";
 
 const BOT_TOKEN = import.meta.env.VITE_BOT_TOKEN;
 const CHAT_ID = import.meta.env.VITE_PACKAGES_CHAT_ID;
 
-const ShimlaManali = () => {
+const HaridwarRishikesh = () => {
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -29,8 +29,8 @@ const ShimlaManali = () => {
     e.preventDefault();
     const { name, phone, people } = formData;
 
-    const message = ` 
-📍 *New Shimla - Manali Package Lead!*  
+    const message = `
+📍 *New Haridwar - Rishikesh Package Lead!*  
 
 👤 *Name:* ${name}  
 📞 *Phone:* ${phone}  
@@ -40,7 +40,9 @@ const ShimlaManali = () => {
     try {
       await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+        },
         body: JSON.stringify({
           chat_id: CHAT_ID,
           text: message,
@@ -61,71 +63,56 @@ const ShimlaManali = () => {
       <Navbar />
       <div className="w-full p-10 px-6 lg:p-14 flex flex-col gap-8 lg:gap-12 lg:items-center lg:justify-center lg:text-center">
         <h2 className="text-xl lg:text-4xl text-center leading-none">
-          Shimla - Manali Tour
+          Haridwar - Rishikesh Tour
         </h2>
         <div className="w-full lg:w-1/2 h-[35vh] lg:h-[60vh] rounded-md overflow-hidden">
           <img
             src={Image}
-            alt="Shimla - Manali tour"
+            alt="Haridwar Rishikesh tour package"
             loading="lazy"
             className="w-full h-full object-cover object-center"
           />
         </div>
         <p className="text-lg lg:text-xl font-medium font-[Poppins] lg:w-[70%]">
-          Discover the scenic beauty and serene landscapes with our Shimla -
-          Manali Tour Package. Explore the picturesque hill stations of Shimla
-          and Manali with adventure activities and local sightseeing!
+          A soulful escape into the spiritual heart of India. From the divine
+          Ganga Aarti at Har-ki-Pauri to yoga and meditation in the peaceful
+          ashrams of Rishikesh — this 3 Nights / 4 Days tour is the perfect
+          blend of serenity and culture.
         </p>
 
         <div className="flex flex-col gap-6 lg:items-center lg:text-left lg:w-[70%]">
           <h3 className="text-2xl lg:text-4xl leading-none">Itinerary</h3>
           <div className="text-base lg:text-lg font-[Poppins] leading-relaxed">
             <p>
-              <b>Day 1:</b> <i>Delhi/Chandigarh - Shimla</i>
+              <b>Day 1:</b> <i>Delhi - Haridwar (230kms/6hr)</i>
               <br />
-              Pickup from Delhi and drive to Shimla. Arrive Shimla and check
-              into the hotel. Evening at leisure; explore Mall Road. Overnight
-              stay at the hotel.
+              Arrive in Delhi and drive to Haridwar. Check in to the hotel and
+              relax. In the evening, visit Har-ki-Pauri for Ganga Aarti. Option
+              to take a holy dip. Explore the market area. Overnight at hotel.
             </p>
             <br />
             <p>
-              <b>Day 2:</b> <i>Shimla - Kufri - Shimla</i>
+              <b>Day 2:</b> <i>Haridwar - Rishikesh (24kms/1hr)</i>
               <br />
-              After breakfast, visit Indian Institute of Advanced Studies,
-              Sankat Mochan Temple, and Jakhu Temple. In the afternoon, enjoy an
-              excursion to Kufri and Chail. Overnight stay in Shimla.
+              Visit local temples and ashrams in Haridwar, including Daksh
+              Temple, Mansa Devi (ropeway), Chandi Devi, and more. Proceed to
+              Rishikesh and visit ashrams, Triveni Ghat for Aarti, and enjoy
+              your overnight stay in Rishikesh.
             </p>
             <br />
             <p>
-              <b>Day 3:</b> <i>Shimla - Manali</i>
+              <b>Day 3:</b> <i>Rishikesh - Delhi</i>
               <br />
-              After breakfast, check out from the hotel and drive to Manali.
-              Arrive at Manali and check-in to the hotel. Evening free to visit
-              local markets. Overnight stay at Manali.
+              After breakfast, visit remaining attractions in Rishikesh. Later
+              in the afternoon, drive back to Delhi for an overnight stay.
             </p>
             <br />
             <p>
-              <b>Day 4:</b> <i>Manali Sightseeing</i>
+              <b>Day 4:</b> <i>Departure from Delhi</i>
               <br />
-              After breakfast, visit Hadimba Temple, Vashisht Temple, Manu
-              Temple, and Naggar Valley. Evening free for leisure at Mall Road.
-              Overnight stay in Manali.
-            </p>
-            <br />
-            <p>
-              <b>Day 5:</b>{" "}
-              <i>Manali - Sohlang Valley (Rohtang Pass Extra on Request)</i>
-              <br />
-              After breakfast, visit Kothi Gorge and Sohlang Valley. Optional
-              Rohtang Pass visit. Evening free for leisure. Overnight stay at
-              Manali.
-            </p>
-            <br />
-            <p>
-              <b>Day 6:</b> <i>Manali - Chandigarh/Delhi</i>
-              <br />
-              Check out from the hotel and drive back to Delhi or Chandigarh for
-              departure.
+              After breakfast, enjoy sightseeing in Old and New Delhi — Red
+              Fort, Raj Ghat, Jama Masjid, Qutub Minar, India Gate, and
+              Akshardham Temple. Evening transfer to airport for departure.
             </p>
           </div>
         </div>
@@ -135,11 +122,11 @@ const ShimlaManali = () => {
             Package Inclusions
           </h3>
           <ul className="list-disc pl-6 lg:pl-8 font-[Poppins] text-base lg:text-lg leading-relaxed text-left">
-            <li>Destination bus tickets</li>
-            <li>Pick-up and drop from the destination bus stand</li>
-            <li>Welcome drink on arrival</li>
-            <li>02 Nights' accommodation with breakfast and dinner</li>
-            <li>All transfers and sightseeing by private car</li>
+            <li>Destination Bus Tickets</li>
+            <li>Pick up & drop from Destination Bus Stand</li>
+            <li>Welcome Drink on arrival</li>
+            <li>2 Breakfasts & 2 Dinners</li>
+            <li>All Transfers and Sightseeing by Private Car</li>
           </ul>
         </div>
 
@@ -148,19 +135,18 @@ const ShimlaManali = () => {
             Package Excludes
           </h3>
           <ul className="list-disc pl-6 lg:pl-8 font-[Poppins] text-base lg:text-lg leading-relaxed text-left">
-            <li>Any monuments and entrance fees</li>
-            <li>Any kind of activity charges</li>
-            <li>Train, air, or bus tickets not listed in inclusions</li>
-            <li>Lunch</li>
-            <li>Personal expenses</li>
-            <li>Room heater during the stay</li>
-            <li>Snow vehicle charges if roads are blocked due to snowfall</li>
-            <li>5% GST extra on total billing</li>
+            <li>Monument & Entrance Fees</li>
+            <li>Activity Charges</li>
+            <li>Unmentioned Train, Air, or Bus Tickets</li>
+            <li>Lunch & Personal Expenses</li>
+            <li>Room Heater Charges</li>
+            <li>Snow Vehicle Charges (if roads blocked)</li>
+            <li>5% GST Extra</li>
           </ul>
         </div>
 
         <div className="text-lg lg:text-2xl leading-none lg:w-[70%]">
-          Starting from <span className="text-green-600">₹10499/-</span>
+          Starting from <span className="text-green-600">₹5499/-</span>
         </div>
 
         <form
@@ -210,4 +196,4 @@ const ShimlaManali = () => {
   );
 };
 
-export default ShimlaManali;
+export default HaridwarRishikesh;

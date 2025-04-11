@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <div className="w-full pt-8 px-6 lg:px-12 xl:px-24 flex flex-col gap-8 text-white bg-stone-800">
-      <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8">
+      <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8 lg:gap-16">
         {/* Brand Title */}
-        <div className="lg:w-1/2 xl:w-[40%] flex gap-2 flex-col">
+        <div className="lg:w-[40%] flex gap-2 flex-col">
           <h2 className="text-xl lg:text-2xl text-white">RK Travels</h2>
           <p className="mt-2 text-sm text-stone-300 leading-relaxed">
             Your trusted travel partner for unforgettable journeys across India.
@@ -15,37 +16,37 @@ const Footer = () => {
         </div>
 
         {/* Footer Content */}
-        <div className="flex flex-wrap gap-y-8 gap-x-16 text-sm lg:text-base text-stone-300">
+        <div className="lg:w-[60%] flex gap-8 text-sm flex-wrap lg:flex-nowrap lg:text-base text-stone-300">
           {/* Quick Links */}
-          <div className="flex gap-4 flex-col">
+          <div className="w-full lg:w-1/4 flex gap-4 flex-col">
             <h4 className="text-base text-white">QUICK LINKS</h4>
             <div className="flex gap-2 flex-col">
-              <a href="/" className="text-stone-300">
+              <Link to="/" className="text-stone-300">
                 Home
-              </a>
-              <a href="/about" className="text-stone-300">
+              </Link>
+              <Link to="/about" className="text-stone-300">
                 About
-              </a>
-              <a href="/packages" className="text-stone-300">
+              </Link>
+              <Link to="/packages" className="text-stone-300">
                 Packages
-              </a>
-              <a href="/contact" className="text-stone-300">
+              </Link>
+              <Link to="/contact" className="text-stone-300">
                 Contact
-              </a>
+              </Link>
             </div>
           </div>
 
           {/* Company */}
-          <div className="flex gap-4 flex-col">
+          <div className="w-full lg:w-1/4 flex gap-4 flex-col">
             <h4 className="text-base text-white">COMPANY</h4>
             <div className="flex gap-2 flex-col">
-              <a href="/terms-conditions">Terms & Conditions</a>
-              <a href="/privacy-policies">Privacy Policies</a>
+              <Link to="/privacy-policies">Privacy Policies</Link>
+              <Link to="/terms-conditions">Terms & Conditions</Link>
             </div>
           </div>
 
           {/* Contact */}
-          <div className="flex gap-4 flex-col">
+          <div className="w-full lg:w-2/4 flex gap-4 flex-col">
             <h4 className="text-base text-white">CONTACT</h4>
             <div className="flex gap-2 flex-col">
               <div className="flex items-center gap-2">

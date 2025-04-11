@@ -8,8 +8,8 @@ import Footer from "../../components/Footer";
 // Assets
 import Image from "../../assets/images/Manali.webp";
 
-const BOT_TOKEN = "7429642388:AAFEpy0Jubs7UpbgUgyMWV7TkeJK7SdRMhs";
-const CHAT_ID = "-1002624033406";
+const BOT_TOKEN = import.meta.env.VITE_BOT_TOKEN;
+const CHAT_ID = import.meta.env.VITE_PACKAGES_CHAT_ID;
 
 const Manali = () => {
   const [formData, setFormData] = useState({
@@ -65,7 +65,7 @@ const Manali = () => {
         <h2 className="text-xl lg:text-4xl text-center leading-none">
           Manali Tour
         </h2>
-        <div className="w-full h-[35vh] lg:h-[40vh] rounded-md overflow-hidden">
+        <div className="w-full lg:w-1/2 h-[35vh] lg:h-[60vh] rounded-md overflow-hidden">
           <img
             src={Image}
             alt="Manali tour package"
@@ -152,7 +152,7 @@ const Manali = () => {
         </div>
 
         <div className="text-lg lg:text-2xl leading-none lg:w-[70%]">
-          Starting from <span className="text-green-600">₹4,499/-</span>
+          Starting from <span className="text-green-600">₹4499/-</span>
         </div>
 
         <form

@@ -23,17 +23,19 @@ const Navbar = () => {
         }`}
       >
         {/* Logo */}
-        <h2
-          className={`text-xl lg:text-2xl font-medium z-50 transition-colors duration-200 ${
-            navOpen
-              ? "text-stone-800"
-              : isHome
-              ? "text-white"
-              : "text-stone-800"
-          }`}
-        >
-          RK Travels
-        </h2>
+        <Link to="/" className="z-50">
+          <h2
+            className={`text-xl lg:text-2xl font-medium transition-colors duration-200 ${
+              navOpen
+                ? "text-stone-800"
+                : isHome
+                ? "text-white"
+                : "text-stone-800"
+            }`}
+          >
+            RK Travels
+          </h2>
+        </Link>
 
         {/* Desktop Nav */}
         <div

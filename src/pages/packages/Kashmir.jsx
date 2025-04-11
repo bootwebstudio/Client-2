@@ -8,8 +8,8 @@ import Footer from "../../components/Footer";
 // Assets
 import Image from "../../assets/images/Kashmir.webp";
 
-const BOT_TOKEN = "7429642388:AAFEpy0Jubs7UpbgUgyMWV7TkeJK7SdRMhs";
-const CHAT_ID = "-1002624033406";
+const BOT_TOKEN = import.meta.env.VITE_BOT_TOKEN;
+const CHAT_ID = import.meta.env.VITE_PACKAGES_CHAT_ID;
 
 const Kashmir = () => {
   const [formData, setFormData] = useState({
@@ -63,7 +63,7 @@ const Kashmir = () => {
         <h2 className="text-xl lg:text-4xl text-center leading-none">
           Kashmir Tour
         </h2>
-        <div className="w-full h-[35vh] lg:h-[40vh] rounded-md overflow-hidden">
+        <div className="w-full lg:w-1/2 h-[35vh] lg:h-[60vh] rounded-md overflow-hidden">
           <img
             src={Image}
             alt="Kashmir tour"
@@ -90,7 +90,7 @@ const Kashmir = () => {
             </p>
             <br />
             <p>
-              <b>Day 2:</b> <i>Srinagar – Pahalgam – Srinagar</i>
+              <b>Day 2:</b> <i>Srinagar - Pahalgam - Srinagar</i>
               <br />
               After breakfast, enjoy a full-day excursion to Pahalgam. Take a
               pony ride to explore the beautiful spots (at your own cost).
@@ -99,7 +99,7 @@ const Kashmir = () => {
             </p>
             <br />
             <p>
-              <b>Day 3:</b> <i>Srinagar – Gulmarg – Srinagar</i>
+              <b>Day 3:</b> <i>Srinagar - Gulmarg - Srinagar</i>
               <br />
               After breakfast, enjoy a full-day sightseeing tour of Gulmarg.
               Visit the highest golf course and enjoy skiing (in winters). You
@@ -151,7 +151,7 @@ const Kashmir = () => {
         </div>
 
         <div className="text-lg lg:text-2xl leading-none lg:w-[70%]">
-          Starting from <span className="text-green-600">₹8,999/-</span>
+          Starting from <span className="text-green-600">₹8999/-</span>
         </div>
 
         <form
