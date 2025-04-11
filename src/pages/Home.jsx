@@ -1,6 +1,7 @@
 import React from "react";
 import { useRef } from "react";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import { Swiper } from "swiper/react";
 import { SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
@@ -11,7 +12,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 // Icons
-import { ChevronLeft, Turtle } from "lucide-react";
+import { ChevronLeft } from "lucide-react";
 import { ChevronRight } from "lucide-react";
 
 // Packages
@@ -33,59 +34,78 @@ import Testimonial5 from "../assets/media/Testimonial5.mp4";
 import Testimonial6 from "../assets/media/Testimonial6.mp4";
 import Testimonial7 from "../assets/media/Testimonial7.mp4";
 
+const testimonials = [
+  Testimonial1,
+  Testimonial2,
+  Testimonial3,
+  Testimonial4,
+  Testimonial5,
+  Testimonial6,
+  Testimonial7,
+];
+
+// Packages Data
+const packages = [
+  {
+    title: "Manali Tour Package",
+    price: 4499,
+    rating: "4.8/5",
+    image: Manali,
+    link: "/packages/manali",
+  },
+  {
+    title: "Shimla Tour Package",
+    price: 5499,
+    rating: "4.8/5",
+    image: Shimla,
+    link: "/packages/shimla",
+  },
+  {
+    title: "Goa Tour Package",
+    price: 7499,
+    rating: "4.7/5",
+    image: Goa,
+    link: "/packages/goa",
+  },
+  {
+    title: "Nainital Tour Package",
+    price: 6499,
+    rating: "4.9/5",
+    image: Nainital,
+    link: "/packages/nainital",
+  },
+  {
+    title: "Shimla - Manali Tour Package",
+    price: 10499,
+    rating: "4.8/5",
+    image: ShimlaManali,
+    link: "/packages/shimla-manali",
+  },
+  {
+    title: "Kashmir Tour Package",
+    price: 8999,
+    rating: "4.8/5",
+    image: Kashmir,
+    link: "/packages/kashmir",
+  },
+  {
+    title: "Uttarakhand Tour Package",
+    price: 15499,
+    rating: "4.8/5",
+    image: Uttarakhand,
+    link: "/packages/uttarakhand",
+  },
+  {
+    title: "Haridwar - Rishikesh Tour Package",
+    price: 5499,
+    rating: "4.8/5",
+    image: Haridwar,
+    link: "/packages/haridwar",
+  },
+];
+
 const Home = () => {
   const packagesSwiperRef = useRef(null);
-
-  const packages = [
-    {
-      title: "Manali Tour Package",
-      price: 4499,
-      rating: "4.8/5",
-      image: Manali,
-    },
-    {
-      title: "Shimla Tour Package",
-      price: 5499,
-      rating: "4.8/5",
-      image: Shimla,
-    },
-    {
-      title: "Goa Tour Package",
-      price: 7499,
-      rating: "4.7/5",
-      image: Goa,
-    },
-    {
-      title: "Nainital Tour Package",
-      price: 6499,
-      rating: "4.9/5",
-      image: Nainital,
-    },
-    {
-      title: "Shimla & Manali Tour Package",
-      price: 10499,
-      rating: "4.8/5",
-      image: ShimlaManali,
-    },
-    {
-      title: "Kashmir Tour Package",
-      price: 8999,
-      rating: "4.8/5",
-      image: Kashmir,
-    },
-    {
-      title: "Uttarakhand Tour Package",
-      price: 15499,
-      rating: "4.8/5",
-      image: Uttarakhand,
-    },
-    {
-      title: "Haridwar Tour Package",
-      price: 5499,
-      rating: "4.8/5",
-      image: Haridwar,
-    },
-  ];
 
   const testimonialsSwiperRef = useRef(null);
   const videoRefs = useRef([]);
@@ -114,16 +134,6 @@ const Home = () => {
       currentPlayingIndex.current = null;
     });
   }, []);
-
-  const testimonials = [
-    Testimonial1,
-    Testimonial2,
-    Testimonial3,
-    Testimonial4,
-    Testimonial5,
-    Testimonial6,
-    Testimonial7,
-  ];
 
   return (
     <div className="w-full h-full font-[Boldonse] text-stone-800 bg-white">
@@ -210,31 +220,35 @@ const Home = () => {
         >
           {packages.map((pkg, index) => (
             <SwiperSlide key={index}>
-              <div className="w-full h-[35vh] lg:h-[40vh] rounded-xl overflow-hidden">
-                <img
-                  src={pkg.image}
-                  alt={pkg.title}
-                  loading="lazy"
-                  className="w-full h-full object-cover object-center"
-                />
-              </div>
-              <div className="pt-4 px-0 flex gap-2 flex-col font-[Poppins]">
-                <h2 className="text-xl font-bold leading-none">{pkg.title}</h2>
-                <div className="flex gap-6 justify-between">
-                  <div className="flex gap-[4px] items-center">
-                    <span className="font-bold">{`₹${pkg.price}/person`}</span>
-                    <span className="font-medium">starting</span>
-                  </div>
-                  <div className="flex gap-[4px] items-center justify-center">
-                    <span className="leading-none text-amber-400">
-                      <i className="ri-star-fill"></i>
-                    </span>
-                    <span className="font-medium leading-none">
-                      {pkg.rating}
-                    </span>
+              <Link to={pkg.link}>
+                <div className="w-full h-[35vh] lg:h-[40vh] rounded-xl overflow-hidden">
+                  <img
+                    src={pkg.image}
+                    alt={pkg.title}
+                    loading="lazy"
+                    className="w-full h-full object-cover object-center"
+                  />
+                </div>
+                <div className="pt-4 px-0 flex gap-2 flex-col font-[Poppins]">
+                  <h2 className="text-xl font-bold leading-none">
+                    {pkg.title}
+                  </h2>
+                  <div className="flex gap-6 justify-between">
+                    <div className="flex gap-[4px] items-center">
+                      <span className="font-bold">{`₹${pkg.price}/person`}</span>
+                      <span className="font-medium">starting</span>
+                    </div>
+                    <div className="flex gap-[4px] items-center justify-center">
+                      <span className="leading-none text-amber-400">
+                        <i className="ri-star-fill"></i>
+                      </span>
+                      <span className="font-medium leading-none">
+                        {pkg.rating}
+                      </span>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             </SwiperSlide>
           ))}
         </Swiper>
@@ -346,14 +360,17 @@ const Home = () => {
 
       {/* CTA Section */}
       <div className="w-full p-12 px-6 lg:p-14 flex flex-col items-center gap-8 lg:gap-12">
-        <div className="w-full xl:w-[80%] p-8 px-6 md:p-12 rounded-xl flex flex-col gap-8 items-center justify-center bg-stone-800/15">
+        <div className="w-full xl:w-[80%] p-8 px-6 md:p-12 rounded-xl flex flex-col gap-8 lg:items-center justify-center bg-stone-800/15">
           <h2 className="lg:px-12 text-lg lg:text-3xl text-center lg:leading-relaxed">
             Looking for the perfect trip? Start by exploring all our packages
             tailored just for you.
           </h2>
-          <button className="w-full lg:w-fit p-6 px-0 lg:px-16 text-sm lg:text-xl rounded-full text-white bg-stone-800">
-            Discover your perfect trip
-          </button>
+
+          <Link to="/packages" className="w-full lg:w-fit">
+            <button className="w-full lg:w-fit p-4 px-6 lg:px-12 lg:text-xl font-semibold capitalize rounded-md font-[Poppins] text-white bg-stone-800">
+              Discover your perfect trip
+            </button>
+          </Link>
         </div>
       </div>
 

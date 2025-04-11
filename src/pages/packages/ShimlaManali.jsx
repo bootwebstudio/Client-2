@@ -6,12 +6,12 @@ import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 
 // Assets
-import Image from "../../assets/images/Uttarakhand.webp";
+import Image from "../../assets/images/ShimlaManali.webp";
 
 const BOT_TOKEN = "7429642388:AAFEpy0Jubs7UpbgUgyMWV7TkeJK7SdRMhs";
 const CHAT_ID = "-1002624033406";
 
-const Uttarakhand = () => {
+const ShimlaManali = () => {
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -29,8 +29,8 @@ const Uttarakhand = () => {
     e.preventDefault();
     const { name, phone, people } = formData;
 
-    const message = `
-📍 *New Uttarakhand Package Lead!*  
+    const message = ` 
+📍 *New Shimla - Manali Package Lead!*  
 
 👤 *Name:* ${name}  
 📞 *Phone:* ${phone}  
@@ -61,65 +61,71 @@ const Uttarakhand = () => {
       <Navbar />
       <div className="w-full p-10 px-6 lg:p-14 flex flex-col gap-8 lg:gap-12 lg:items-center lg:justify-center lg:text-center">
         <h2 className="text-xl lg:text-4xl text-center leading-none">
-          Uttarakhand Tour
+          Shimla - Manali Tour
         </h2>
         <div className="w-full h-[35vh] lg:h-[40vh] rounded-md overflow-hidden">
           <img
             src={Image}
-            alt="Uttarakhand tour"
+            alt="Shimla - Manali tour"
             loading="lazy"
             className="w-full h-full object-cover object-center"
           />
         </div>
         <p className="text-lg lg:text-xl font-medium font-[Poppins] lg:w-[70%]">
-          Discover spiritual serenity and hill station charm with our 5-Day
-          Uttarakhand Tour Package, covering Rishikesh, Dehradun, Mussoorie and
-          Haridwar. A perfect blend of nature, peace, and adventure!
+          Discover the scenic beauty and serene landscapes with our Shimla -
+          Manali Tour Package. Explore the picturesque hill stations of Shimla
+          and Manali with adventure activities and local sightseeing!
         </p>
 
         <div className="flex flex-col gap-6 lg:items-center lg:text-left lg:w-[70%]">
           <h3 className="text-2xl lg:text-4xl leading-none">Itinerary</h3>
           <div className="text-base lg:text-lg font-[Poppins] leading-relaxed">
             <p>
-              <b>Day 1:</b> <i>Delhi - Rishikesh</i>
+              <b>Day 1:</b> <i>Delhi/Chandigarh - Shimla</i>
               <br />
-              Pickup from Delhi and drive to Rishikesh. After hotel check-in and
-              freshening up, explore Ram Jhula, Laxman Jhula, Munni Ki Reti, and
-              witness the mesmerizing Evening Ganga Aarti. Dinner and overnight
-              stay in Rishikesh.
+              Pickup from Delhi and drive to Shimla. Arrive Shimla and check
+              into the hotel. Evening at leisure; explore Mall Road. Overnight
+              stay at the hotel.
             </p>
             <br />
             <p>
-              <b>Day 2:</b> <i>Rishikesh - Dehradun - Mussoorie</i>
+              <b>Day 2:</b> <i>Shimla - Kufri - Shimla</i>
               <br />
-              After breakfast, drive towards Mussoorie via Dehradun. En route
-              visit Sahastradhara, Robber's Cave, Dehradun Zoo, Buddha Temple,
-              and local markets. Reach Mussoorie by evening and check in. Dinner
-              and night stay in Mussoorie.
+              After breakfast, visit Indian Institute of Advanced Studies,
+              Sankat Mochan Temple, and Jakhu Temple. In the afternoon, enjoy an
+              excursion to Kufri and Chail. Overnight stay in Shimla.
             </p>
             <br />
             <p>
-              <b>Day 3:</b> <i>Mussoorie Sightseeing</i>
+              <b>Day 3:</b> <i>Shimla - Manali</i>
               <br />
-              Full-day sightseeing in Mussoorie. Visit Mall Road, Kempty Falls,
-              Library Chowk, and enjoy Gun Hill Ropeway (at your own cost).
-              Dinner and overnight stay in Mussoorie.
+              After breakfast, check out from the hotel and drive to Manali.
+              Arrive at Manali and check-in to the hotel. Evening free to visit
+              local markets. Overnight stay at Manali.
             </p>
             <br />
             <p>
-              <b>Day 4:</b> <i>Mussoorie - Haridwar</i>
+              <b>Day 4:</b> <i>Manali Sightseeing</i>
               <br />
-              Post breakfast, check out and proceed to Haridwar. After check-in,
-              explore Har Ki Pauri, Mansa Devi Temple (Ropeway on own cost), and
-              attend the sacred evening Ganga Aarti. Dinner and overnight stay
-              in Haridwar.
+              After breakfast, visit Hadimba Temple, Vashisht Temple, Manu
+              Temple, and Naggar Valley. Evening free for leisure at Mall Road.
+              Overnight stay in Manali.
             </p>
             <br />
             <p>
-              <b>Day 5:</b> <i>Haridwar - Delhi</i>
+              <b>Day 5:</b>{" "}
+              <i>Manali - Sohlang Valley (Rohtang Pass Extra on Request)</i>
               <br />
-              After breakfast, check out and return to Delhi for your departure
-              by flight or train. Trip ends with beautiful memories!
+              After breakfast, visit Kothi Gorge and Sohlang Valley. Optional
+              Rohtang Pass visit. Evening free for leisure. Overnight stay at
+              Manali.
+            </p>
+            <br />
+            <p>
+              <b>Day 6:</b> <i>Manali - Chandigarh/Delhi</i>
+              <br />
+              Check out from the hotel and drive back to Delhi or Chandigarh for
+              departure.
             </p>
           </div>
         </div>
@@ -129,11 +135,11 @@ const Uttarakhand = () => {
             Package Inclusions
           </h3>
           <ul className="list-disc pl-6 lg:pl-8 font-[Poppins] text-base lg:text-lg leading-relaxed text-left">
-            <li>Pick up and drop from Delhi</li>
-            <li>All sightseeing as per itinerary by private cab</li>
+            <li>Destination bus tickets</li>
+            <li>Pick-up and drop from the destination bus stand</li>
             <li>Welcome drink on arrival</li>
-            <li>06 Nights' Accommodation in well-appointed rooms</li>
-            <li>06 Breakfasts + 06 Dinners</li>
+            <li>02 Nights' accommodation with breakfast and dinner</li>
+            <li>All transfers and sightseeing by private car</li>
           </ul>
         </div>
 
@@ -142,18 +148,19 @@ const Uttarakhand = () => {
             Package Excludes
           </h3>
           <ul className="list-disc pl-6 lg:pl-8 font-[Poppins] text-base lg:text-lg leading-relaxed text-left">
-            <li>Any monuments and entrance fee</li>
+            <li>Any monuments and entrance fees</li>
             <li>Any kind of activity charges</li>
-            <li>Train, Air, or Bus tickets not listed in inclusions</li>
+            <li>Train, air, or bus tickets not listed in inclusions</li>
             <li>Lunch</li>
-            <li>Personal nature expenses</li>
+            <li>Personal expenses</li>
             <li>Room heater during the stay</li>
+            <li>Snow vehicle charges if roads are blocked due to snowfall</li>
             <li>5% GST extra on total billing</li>
           </ul>
         </div>
 
         <div className="text-lg lg:text-2xl leading-none lg:w-[70%]">
-          Starting from <span className="text-green-600">₹15,499/-</span>
+          Starting from <span className="text-green-600">₹10,499/-</span>
         </div>
 
         <form
@@ -203,4 +210,4 @@ const Uttarakhand = () => {
   );
 };
 
-export default Uttarakhand;
+export default ShimlaManali;

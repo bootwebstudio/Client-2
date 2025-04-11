@@ -54,11 +54,13 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-2">
                 <i className="ri-mail-fill" />
-                <span className="text-sm">info@rktravels.com</span>
+                <span className="text-sm">rktravels484@gmail.com</span>
               </div>
               <div className="flex items-center gap-2">
                 <i className="ri-map-pin-2-fill" />
-                <span className="text-sm">Delhi, India</span>
+                <span className="text-sm leading-loose">
+                  G-17A rajeev nagar, Rohini sector-37, New Delhi- 110086
+                </span>
               </div>
             </div>
           </div>

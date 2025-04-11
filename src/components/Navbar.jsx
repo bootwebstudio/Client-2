@@ -1,9 +1,12 @@
 import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
+  const location = useLocation();
+  const isHome = location.pathname === "/";
 
   const toggleNav = () => {
     setNavOpen(!navOpen);
@@ -14,7 +17,7 @@ const Navbar = () => {
       {/* Navbar */}
       <div
         className={`w-full p-6 px-6 lg:px-12 flex items-center justify-between inset-0 z-50 transition-all duration-200 ${
-          navOpen
+          navOpen || !isHome
             ? "bg-white border-b-2 border-stone-800"
             : "border-b-2 border-white/15"
         }`}
@@ -22,41 +25,53 @@ const Navbar = () => {
         {/* Logo */}
         <h2
           className={`text-xl lg:text-2xl font-medium z-50 transition-colors duration-200 ${
-            navOpen ? "text-stone-800" : "text-white"
+            navOpen
+              ? "text-stone-800"
+              : isHome
+              ? "text-white"
+              : "text-stone-800"
           }`}
         >
           RK Travels
         </h2>
 
         {/* Desktop Nav */}
-        <div className="hidden lg:flex gap-12 items-center text-white">
+        <div
+          className={`hidden lg:flex gap-12 items-center ${
+            isHome ? "text-white" : "text-stone-800"
+          }`}
+        >
           <Link to="/">Home</Link>
           <Link to="/about">About</Link>
           <Link to="/packages">Packages</Link>
           <Link to="/contact">Contact</Link>
         </div>
 
-        {/* Hamburger Menu Icon */}
+        {/* Hamburger Menu */}
         <div
           onClick={toggleNav}
           className={`p-4 px-2.5 rounded-full flex lg:hidden gap-2 flex-col z-50 cursor-pointer transition-colors duration-200 ${
-            navOpen ? "bg-stone-800" : "bg-white"
+            navOpen ? "bg-stone-800" : isHome ? "bg-white" : "bg-stone-800"
           }`}
         >
           <div
             className={`w-6 h-[0.85px] transition-all duration-200 ${
               navOpen
                 ? "bg-white rotate-[225deg] translate-y-1"
-                : "bg-stone-800"
+                : isHome
+                ? "bg-stone-800"
+                : "bg-white"
             }`}
-          ></div>
+          />
           <div
             className={`w-6 h-[0.85px] transition-all duration-200 ${
               navOpen
                 ? "bg-white -rotate-[225deg] -translate-y-1"
-                : "bg-stone-800"
+                : isHome
+                ? "bg-stone-800"
+                : "bg-white"
             }`}
-          ></div>
+          />
         </div>
       </div>
 
