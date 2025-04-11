@@ -17,8 +17,8 @@ import Kashmir from "./pages/packages/Kashmir";
 import Uttarakhand from "./pages/packages/Uttarakhand";
 import HaridwarRishikesh from "./pages/packages/HaridwarRishikesh";
 import NotFound from "./pages/NotFound";
-import Loader from "./components/Loader"; // 👈 Create a loader component
-import ScrollToTop from "./components/ScrollToTop"; // 👈 For scroll reset
+import Loader from "./components/Loader";
+import ScrollToTop from "./components/ScrollToTop";
 
 const AppRoutes = () => {
   return (

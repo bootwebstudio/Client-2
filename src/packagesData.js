@@ -1,0 +1,58 @@
+const packages = [
+  {
+    title: "Manali Tour Package",
+    price: 4499,
+    rating: "4.8/5",
+    image: Manali,
+    link: "/packages/manali",
+  },
+  {
+    title: "Shimla Tour Package",
+    price: 5499,
+    rating: "4.8/5",
+    image: Shimla,
+    link: "/packages/shimla",
+  },
+  {
+    title: "Goa Tour Package",
+    price: 7499,
+    rating: "4.7/5",
+    image: Goa,
+    link: "/packages/goa",
+  },
+  {
+    title: "Nainital Tour Package",
+    price: 6499,
+    rating: "4.9/5",
+    image: Nainital,
+    link: "/packages/nainital",
+  },
+  {
+    title: "Shimla - Manali Tour Package",
+    price: 10499,
+    rating: "4.8/5",
+    image: ShimlaManali,
+    link: "/packages/shimla-manali",
+  },
+  {
+    title: "Kashmir Tour Package",
+    price: 8999,
+    rating: "4.8/5",
+    image: Kashmir,
+    link: "/packages/kashmir",
+  },
+  {
+    title: "Uttarakhand Tour Package",
+    price: 15499,
+    rating: "4.8/5",
+    image: Uttarakhand,
+    link: "/packages/uttarakhand",
+  },
+  {
+    title: "Haridwar - Rishikesh Tour Package",
+    price: 5499,
+    rating: "4.8/5",
+    image: HaridwarRishikesh,
+    link: "/packages/haridwar-rishikesh",
+  },
+];
