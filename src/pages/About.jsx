@@ -10,7 +10,7 @@ const About = () => {
     <div className="w-full h-full font-[Boldonse] text-stone-800 bg-white">
       <Navbar />
       <div className="w-full p-10 px-6 lg:p-14 flex flex-col lg:items-center gap-8 lg:gap-12">
-        <h2 className="text-2xl lg:text-4xl font-semibold leading-tight">
+        <h2 className="text-2xl lg:text-4xl font-semibold leading-tight text-center">
           OUR STORY
         </h2>
         <p className="text-lg font-[Poppins] text-center text-stone-600 max-w-2xl">
@@ -31,7 +31,7 @@ const About = () => {
           planning, reliable transport, and a passion for hospitality.
         </p>
 
-        <h2 className="text-2xl lg:text-4xl font-semibold leading-tight mt-4">
+        <h2 className="text-2xl lg:text-4xl font-semibold leading-tight text-center mt-4">
           WHY TRAVEL WITH US?
         </h2>
         <p className="text-lg font-[Poppins] text-stone-600 max-w-2xl">
@@ -52,7 +52,7 @@ const About = () => {
           hidden gems, local eats, and must-see places in every region we cover.
         </p>
 
-        <h2 className="text-2xl lg:text-4xl font-semibold leading-tight mt-4">
+        <h2 className="text-2xl lg:text-4xl font-semibold leading-tight text-center mt-4">
           OUR PROMISE
         </h2>
         <p className="text-lg font-[Poppins] text-center text-stone-600 max-w-2xl">

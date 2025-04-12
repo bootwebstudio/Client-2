@@ -138,10 +138,7 @@ const Home = () => {
   return (
     <div className="w-full h-full font-[Boldonse] text-stone-800 bg-white">
       {/* Hero Section */}
-      <div
-        className="w-full h-screen flex flex-col relative text-white bg-cover bg-center"
-        style={{ backgroundImage: "url(./Hero.jpg)" }}
-      >
+      <div className="w-full h-screen flex flex-col relative text-white bg-[url('./Hero.jpg')] bg-cover bg-center">
         {/* Black overlay */}
         <div className="absolute inset-0 bg-black/40 lg:bg-black/25 z-0"></div>
 
@@ -349,7 +346,6 @@ const Home = () => {
                   preload="none"
                   playsInline
                   autoPlay
-                  loading="lazy"
                   onClick={() => handleVideoClick(index)}
                 />
               </div>
@@ -361,7 +357,7 @@ const Home = () => {
       {/* CTA Section */}
       <div className="w-full p-10 px-6 lg:p-14 flex flex-col items-center">
         <div className="w-full max-w-5xl p-8 md:p-14 rounded-2xl bg-stone-800/15 flex flex-col items-center gap-8 text-center">
-          <h2 className="text-2xl lg:text-4xl font-semibold text-stone-800 leading-tight">
+          <h2 className="text-2xl lg:text-4xl font-semibold text-stone-800">
             Find Your Dream Destination
           </h2>
           <p className="text-lg font-[Poppins] text-stone-600 max-w-2xl">
