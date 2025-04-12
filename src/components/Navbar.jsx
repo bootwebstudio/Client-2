@@ -3,6 +3,9 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
+// Assets
+import Logo from "../assets/Logo.svg";
+
 const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
   const location = useLocation();
