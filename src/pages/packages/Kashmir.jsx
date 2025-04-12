@@ -59,16 +59,16 @@ const Kashmir = () => {
   return (
     <div className="w-full h-full font-[Boldonse] text-stone-800 bg-white">
       <Navbar />
-      <div className="w-full p-10 px-6 lg:p-14 flex flex-col gap-8 lg:gap-12 lg:items-center lg:justify-center lg:text-center">
+      <div className="w-full p-10 px-6 lg:p-14 flex flex-col gap-8 lg:gap-12  lg:justify-center lg:text-center">
         <h2 className="text-xl lg:text-4xl text-center leading-none">
           Kashmir Tour
         </h2>
         <div className="w-full lg:w-1/2 h-[35vh] lg:h-[60vh] rounded-md overflow-hidden">
           <img
             src={Image}
-            alt="Kashmir tour"
+            alt="Kashmir tour package"
             loading="lazy"
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105"
           />
         </div>
         <p className="text-lg lg:text-xl font-medium font-[Poppins] lg:w-[70%]">
@@ -77,11 +77,13 @@ const Kashmir = () => {
           sightseeing, adventure, and relaxation!
         </p>
 
-        <div className="flex flex-col gap-6 lg:items-center lg:text-left lg:w-[70%]">
-          <h3 className="text-2xl lg:text-4xl leading-none">Itinerary</h3>
-          <div className="text-base lg:text-lg font-[Poppins] leading-relaxed">
+        <div className="flex flex-col gap-6  lg:text-left lg:w-[70%]">
+          <h2 className="text-2xl lg:text-4xl font-semibold leading-tight">
+            Itinerary
+          </h2>
+          <div className="text-lg font-[Poppins] text-stone-600 max-w-2xl">
             <p>
-              <b>Day 1:</b> <i>Srinagar</i>
+              <b className="text-stone-800">Day 1:</b> <i className="text-stone-800">Srinagar</i>
               <br />
               Arrival at Srinagar airport. Meet our representative and transfer
               to Houseboat. Visit Mughal Gardens, Chashmi-e Shahi, Nishat, and
@@ -90,7 +92,7 @@ const Kashmir = () => {
             </p>
             <br />
             <p>
-              <b>Day 2:</b> <i>Srinagar - Pahalgam - Srinagar</i>
+              <b className="text-stone-800">Day 2:</b> <i className="text-stone-800">Srinagar - Pahalgam - Srinagar</i>
               <br />
               After breakfast, enjoy a full-day excursion to Pahalgam. Take a
               pony ride to explore the beautiful spots (at your own cost).
@@ -99,7 +101,7 @@ const Kashmir = () => {
             </p>
             <br />
             <p>
-              <b>Day 3:</b> <i>Srinagar - Gulmarg - Srinagar</i>
+              <b className="text-stone-800">Day 3:</b> <i className="text-stone-800">Srinagar - Gulmarg - Srinagar</i>
               <br />
               After breakfast, enjoy a full-day sightseeing tour of Gulmarg.
               Visit the highest golf course and enjoy skiing (in winters). You
@@ -109,7 +111,7 @@ const Kashmir = () => {
             </p>
             <br />
             <p>
-              <b>Day 4:</b> <i>Srinagar</i>
+              <b className="text-stone-800">Day 4:</b> <i className="text-stone-800">Srinagar</i>
               <br />
               After breakfast, depart for Srinagar Airport to catch your flight
               back.
@@ -117,11 +119,11 @@ const Kashmir = () => {
           </div>
         </div>
 
-        <div className="flex flex-col gap-6 lg:items-center lg:w-[70%]">
-          <h3 className="text-2xl lg:text-4xl leading-none">
+        <div className="flex flex-col gap-6  lg:w-[70%]">
+          <h2 className="text-2xl lg:text-4xl font-semibold leading-tight">
             Package Inclusions
-          </h3>
-          <ul className="list-disc pl-6 lg:pl-8 font-[Poppins] text-base lg:text-lg leading-relaxed text-left">
+          </h2>
+          <ul className="list-disc pl-6 lg:pl-8 text-lg text-left font-[Poppins] text-stone-600 max-w-2xl">
             <li>Pick up and drop from Srinagar Airport</li>
             <li>All sightseeing as per itinerary by private cab</li>
             <li>Welcome drink on arrival</li>
@@ -131,11 +133,11 @@ const Kashmir = () => {
           </ul>
         </div>
 
-        <div className="flex flex-col gap-6 lg:items-center lg:w-[70%]">
-          <h3 className="text-2xl lg:text-4xl leading-none">
+        <div className="flex flex-col gap-6  lg:w-[70%]">
+          <h2 className="text-2xl lg:text-4xl font-semibold leading-tight">
             Package Exclusions
-          </h3>
-          <ul className="list-disc pl-6 lg:pl-8 font-[Poppins] text-base lg:text-lg leading-relaxed text-left">
+          </h2>
+          <ul className="list-disc pl-6 lg:pl-8 text-lg text-left font-[Poppins] text-stone-600 max-w-2xl">
             <li>Any monuments and entrance fee</li>
             <li>Any kind of activity charges</li>
             <li>Train, Air, or Bus tickets not listed in inclusions</li>
@@ -156,11 +158,11 @@ const Kashmir = () => {
 
         <form
           onSubmit={handleSubmit}
-          className="w-full lg:w-[60%] bg-stone-800/10 p-6 rounded-md flex flex-col gap-4"
+          className="w-full lg:w-[60%] bg-stone-800/10 mt-2 p-6 rounded-md flex flex-col gap-4"
         >
-          <h3 className="text-lg mb-2 text-left lg:text-center">
+          <h2 className="text-lg mb-2 text-left lg:text-center">
             Get This Package
-          </h3>
+          </h2>
           <input
             type="text"
             name="name"

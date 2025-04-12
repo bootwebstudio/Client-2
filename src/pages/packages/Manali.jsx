@@ -70,10 +70,10 @@ const Manali = () => {
             src={Image}
             alt="Manali tour package"
             loading="lazy"
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105"
           />
         </div>
-        <p className="text-lg lg:text-xl font-medium font-[Poppins] lg:w-[70%]">
+        <p className="text-lg font-[Poppins] text-stone-600 max-w-2xl">
           Breathe in crisp mountain air and escape to the magical charm of
           Manali with our perfectly planned 4 Nights / 5 Days tour package.
           Whether you're chasing snowflakes in Solang Valley or soaking in the
@@ -82,17 +82,19 @@ const Manali = () => {
         </p>
 
         <div className="flex flex-col gap-6 lg:items-center lg:text-left lg:w-[70%]">
-          <h3 className="text-2xl lg:text-4xl leading-none">Itinerary</h3>
-          <div className="text-base lg:text-lg font-[Poppins] leading-relaxed">
+          <h2 className="text-2xl lg:text-4xl leading-none">Itinerary</h2>
+          <div className="text-lg font-[Poppins] text-stone-600 max-w-2xl">
             <p>
-              <b>Day 1:</b> <i>Delhi - Manali</i>
+              <b className="text-stone-800">Day 1:</b>{" "}
+              <i className="text-stone-800">Delhi - Manali</i>
               <br />
               Board your Volvo from Delhi at 5:00 PM for an overnight journey
               through the hills toward Manali.
             </p>
             <br />
             <p>
-              <b>Day 2:</b> <i>Manali Sightseeing</i>
+              <b className="text-stone-800">Day 2:</b>{" "}
+              <i className="text-stone-800">Manali Sightseeing</i>
               <br />
               Arrive in Manali and check into the hotel. After freshening up,
               explore Mall Road, Hidimba Devi Temple, Van Vihar, Vashisht
@@ -100,7 +102,8 @@ const Manali = () => {
             </p>
             <br />
             <p>
-              <b>Day 3:</b> <i>Solang Valley Adventure</i>
+              <b className="text-stone-800">Day 3:</b>{" "}
+              <i className="text-stone-800">Solang Valley Adventure</i>
               <br />
               Enjoy a full day at Solang Valley — try snow activities
               (seasonal). Return by evening, dinner, and overnight stay at the
@@ -108,7 +111,8 @@ const Manali = () => {
             </p>
             <br />
             <p>
-              <b>Day 4:</b> <i>Kasol & Manikaran</i>
+              <b className="text-stone-800">Day 4:</b>{" "}
+              <i className="text-stone-800">Kasol & Manikaran</i>
               <br />
               Visit Kullu, Manikaran Sahib, Vaishno Temple, Kasol Valley, and
               River Rafting points. By 6:00 PM, board your return Volvo to
@@ -116,7 +120,8 @@ const Manali = () => {
             </p>
             <br />
             <p>
-              <b>Day 5:</b> <i>Arrival in Delhi</i>
+              <b className="text-stone-800">Day 5:</b>{" "}
+              <i className="text-stone-800">Arrival in Delhi</i>
               <br />
               Morning arrival at Delhi. Trip ends with great memories!
             </p>
@@ -124,10 +129,10 @@ const Manali = () => {
         </div>
 
         <div className="flex flex-col gap-6 lg:items-center lg:w-[70%]">
-          <h3 className="text-2xl lg:text-4xl leading-none">
+          <h2 className="text-2xl lg:text-4xl leading-none">
             Package Inclusions
-          </h3>
-          <ul className="list-disc pl-6 lg:pl-8 font-[Poppins] text-base lg:text-lg leading-relaxed text-left">
+          </h2>
+          <ul className="list-disc pl-6 lg:pl-8 text-lg text-left font-[Poppins] text-stone-600 max-w-2xl">
             <li>Delhi - Manali - Delhi Volvo Tickets</li>
             <li>Pick up & drop from Manali Bus Stand</li>
             <li>Welcome Drink on arrival</li>
@@ -137,10 +142,10 @@ const Manali = () => {
         </div>
 
         <div className="flex flex-col gap-6 lg:items-center lg:w-[70%]">
-          <h3 className="text-2xl lg:text-4xl leading-none">
+          <h2 className="text-2xl lg:text-4xl leading-none">
             Package Excludes
-          </h3>
-          <ul className="list-disc pl-6 lg:pl-8 font-[Poppins] text-base lg:text-lg leading-relaxed text-left">
+          </h2>
+          <ul className="list-disc pl-6 lg:pl-8 text-lg text-left font-[Poppins] text-stone-600 max-w-2xl">
             <li>Monument Entry Fees</li>
             <li>Adventure Activity Charges</li>
             <li>Train, Air, or Bus tickets not listed in inclusions</li>
@@ -157,11 +162,11 @@ const Manali = () => {
 
         <form
           onSubmit={handleSubmit}
-          className="w-full lg:w-[60%] bg-stone-800/10 p-6 rounded-md flex flex-col gap-4"
+          className="w-full lg:w-[60%] bg-stone-800/10 mt-2 p-6 rounded-md flex flex-col gap-4"
         >
-          <h3 className="text-lg mb-2 text-left lg:text-center">
+          <h2 className="text-lg mb-2 text-left lg:text-center">
             Get This Package
-          </h3>
+          </h2>
           <input
             type="text"
             name="name"

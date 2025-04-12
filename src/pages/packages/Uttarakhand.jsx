@@ -66,22 +66,23 @@ const Uttarakhand = () => {
         <div className="w-full lg:w-1/2 h-[35vh] lg:h-[60vh] rounded-md overflow-hidden">
           <img
             src={Image}
-            alt="Uttarakhand tour"
+            alt="Uttarakhand tour package"
             loading="lazy"
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105"
           />
         </div>
-        <p className="text-lg lg:text-xl font-medium font-[Poppins] lg:w-[70%]">
+        <p className="text-lg font-[Poppins] text-stone-600 max-w-2xl">
           Discover spiritual serenity and hill station charm with our 5-Day
           Uttarakhand Tour Package, covering Rishikesh, Dehradun, Mussoorie and
           Haridwar. A perfect blend of nature, peace, and adventure!
         </p>
 
         <div className="flex flex-col gap-6 lg:items-center lg:text-left lg:w-[70%]">
-          <h3 className="text-2xl lg:text-4xl leading-none">Itinerary</h3>
-          <div className="text-base lg:text-lg font-[Poppins] leading-relaxed">
+          <h2 className="text-2xl lg:text-4xl leading-none">Itinerary</h2>
+          <div className="text-lg font-[Poppins] text-stone-600 max-w-2xl">
             <p>
-              <b>Day 1:</b> <i>Delhi - Rishikesh</i>
+              <b className="text-stone-800">Day 1:</b>{" "}
+              <i className="text-stone-800">Delhi - Rishikesh</i>
               <br />
               Pickup from Delhi and drive to Rishikesh. After hotel check-in and
               freshening up, explore Ram Jhula, Laxman Jhula, Munni Ki Reti, and
@@ -90,7 +91,8 @@ const Uttarakhand = () => {
             </p>
             <br />
             <p>
-              <b>Day 2:</b> <i>Rishikesh - Dehradun - Mussoorie</i>
+              <b className="text-stone-800">Day 2:</b>{" "}
+              <i className="text-stone-800">Rishikesh - Dehradun - Mussoorie</i>
               <br />
               After breakfast, drive towards Mussoorie via Dehradun. En route
               visit Sahastradhara, Robber's Cave, Dehradun Zoo, Buddha Temple,
@@ -99,7 +101,8 @@ const Uttarakhand = () => {
             </p>
             <br />
             <p>
-              <b>Day 3:</b> <i>Mussoorie Sightseeing</i>
+              <b className="text-stone-800">Day 3:</b>{" "}
+              <i className="text-stone-800">Mussoorie Sightseeing</i>
               <br />
               Full-day sightseeing in Mussoorie. Visit Mall Road, Kempty Falls,
               Library Chowk, and enjoy Gun Hill Ropeway (at your own cost).
@@ -107,7 +110,8 @@ const Uttarakhand = () => {
             </p>
             <br />
             <p>
-              <b>Day 4:</b> <i>Mussoorie - Haridwar</i>
+              <b className="text-stone-800">Day 4:</b>{" "}
+              <i className="text-stone-800">Mussoorie - Haridwar</i>
               <br />
               Post breakfast, check out and proceed to Haridwar. After check-in,
               explore Har Ki Pauri, Mansa Devi Temple (Ropeway on own cost), and
@@ -116,7 +120,8 @@ const Uttarakhand = () => {
             </p>
             <br />
             <p>
-              <b>Day 5:</b> <i>Haridwar - Delhi</i>
+              <b className="text-stone-800">Day 5:</b>{" "}
+              <i className="text-stone-800">Haridwar - Delhi</i>
               <br />
               After breakfast, check out and return to Delhi for your departure
               by flight or train. Trip ends with beautiful memories!
@@ -125,10 +130,10 @@ const Uttarakhand = () => {
         </div>
 
         <div className="flex flex-col gap-6 lg:items-center lg:w-[70%]">
-          <h3 className="text-2xl lg:text-4xl leading-none">
+          <h2 className="text-2xl lg:text-4xl leading-none">
             Package Inclusions
-          </h3>
-          <ul className="list-disc pl-6 lg:pl-8 font-[Poppins] text-base lg:text-lg leading-relaxed text-left">
+          </h2>
+          <ul className="list-disc pl-6 lg:pl-8 text-lg text-left font-[Poppins] text-stone-600 max-w-2xl">
             <li>Pick up and drop from Delhi</li>
             <li>All sightseeing as per itinerary by private cab</li>
             <li>Welcome drink on arrival</li>
@@ -138,10 +143,10 @@ const Uttarakhand = () => {
         </div>
 
         <div className="flex flex-col gap-6 lg:items-center lg:w-[70%]">
-          <h3 className="text-2xl lg:text-4xl leading-none">
+          <h2 className="text-2xl lg:text-4xl leading-none">
             Package Excludes
-          </h3>
-          <ul className="list-disc pl-6 lg:pl-8 font-[Poppins] text-base lg:text-lg leading-relaxed text-left">
+          </h2>
+          <ul className="list-disc pl-6 lg:pl-8 text-lg text-left font-[Poppins] text-stone-600 max-w-2xl">
             <li>Any monuments and entrance fee</li>
             <li>Any kind of activity charges</li>
             <li>Train, Air, or Bus tickets not listed in inclusions</li>
@@ -158,11 +163,11 @@ const Uttarakhand = () => {
 
         <form
           onSubmit={handleSubmit}
-          className="w-full lg:w-[60%] bg-stone-800/10 p-6 rounded-md flex flex-col gap-4"
+          className="w-full lg:w-[60%] bg-stone-800/10 mt-2 p-6 rounded-md flex flex-col gap-4"
         >
-          <h3 className="text-lg mb-2 text-left lg:text-center">
+          <h2 className="text-lg mb-2 text-left lg:text-center">
             Get This Package
-          </h3>
+          </h2>
           <input
             type="text"
             name="name"

@@ -66,22 +66,23 @@ const ShimlaManali = () => {
         <div className="w-full lg:w-1/2 h-[35vh] lg:h-[60vh] rounded-md overflow-hidden">
           <img
             src={Image}
-            alt="Shimla - Manali tour"
+            alt="Shimla - Manali tour package"
             loading="lazy"
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105"
           />
         </div>
-        <p className="text-lg lg:text-xl font-medium font-[Poppins] lg:w-[70%]">
+        <p className="text-lg font-[Poppins] text-stone-600 max-w-2xl">
           Discover the scenic beauty and serene landscapes with our Shimla -
           Manali Tour Package. Explore the picturesque hill stations of Shimla
           and Manali with adventure activities and local sightseeing!
         </p>
 
         <div className="flex flex-col gap-6 lg:items-center lg:text-left lg:w-[70%]">
-          <h3 className="text-2xl lg:text-4xl leading-none">Itinerary</h3>
-          <div className="text-base lg:text-lg font-[Poppins] leading-relaxed">
+          <h2 className="text-2xl lg:text-4xl leading-none">Itinerary</h2>
+          <div className="text-lg font-[Poppins] text-stone-600 max-w-2xl">
             <p>
-              <b>Day 1:</b> <i>Delhi/Chandigarh - Shimla</i>
+              <b className="text-stone-800">Day 1:</b>{" "}
+              <i className="text-stone-800">Delhi/Chandigarh - Shimla</i>
               <br />
               Pickup from Delhi and drive to Shimla. Arrive Shimla and check
               into the hotel. Evening at leisure; explore Mall Road. Overnight
@@ -89,7 +90,8 @@ const ShimlaManali = () => {
             </p>
             <br />
             <p>
-              <b>Day 2:</b> <i>Shimla - Kufri - Shimla</i>
+              <b className="text-stone-800">Day 2:</b>{" "}
+              <i className="text-stone-800">Shimla - Kufri - Shimla</i>
               <br />
               After breakfast, visit Indian Institute of Advanced Studies,
               Sankat Mochan Temple, and Jakhu Temple. In the afternoon, enjoy an
@@ -97,7 +99,8 @@ const ShimlaManali = () => {
             </p>
             <br />
             <p>
-              <b>Day 3:</b> <i>Shimla - Manali</i>
+              <b className="text-stone-800">Day 3:</b>{" "}
+              <i className="text-stone-800">Shimla - Manali</i>
               <br />
               After breakfast, check out from the hotel and drive to Manali.
               Arrive at Manali and check-in to the hotel. Evening free to visit
@@ -105,7 +108,8 @@ const ShimlaManali = () => {
             </p>
             <br />
             <p>
-              <b>Day 4:</b> <i>Manali Sightseeing</i>
+              <b className="text-stone-800">Day 4:</b>{" "}
+              <i className="text-stone-800">Manali Sightseeing</i>
               <br />
               After breakfast, visit Hadimba Temple, Vashisht Temple, Manu
               Temple, and Naggar Valley. Evening free for leisure at Mall Road.
@@ -113,7 +117,8 @@ const ShimlaManali = () => {
             </p>
             <br />
             <p>
-              <b>Day 5:</b>{" "}
+              <b className="text-stone-800">Day 5:</b>{" "}
+              className="text-stone-800"
               <i>Manali - Sohlang Valley (Rohtang Pass Extra on Request)</i>
               <br />
               After breakfast, visit Kothi Gorge and Sohlang Valley. Optional
@@ -122,7 +127,8 @@ const ShimlaManali = () => {
             </p>
             <br />
             <p>
-              <b>Day 6:</b> <i>Manali - Chandigarh/Delhi</i>
+              <b className="text-stone-800">Day 6:</b>{" "}
+              <i className="text-stone-800">Manali - Chandigarh/Delhi</i>
               <br />
               Check out from the hotel and drive back to Delhi or Chandigarh for
               departure.
@@ -131,10 +137,10 @@ const ShimlaManali = () => {
         </div>
 
         <div className="flex flex-col gap-6 lg:items-center lg:w-[70%]">
-          <h3 className="text-2xl lg:text-4xl leading-none">
+          <h2 className="text-2xl lg:text-4xl leading-none">
             Package Inclusions
-          </h3>
-          <ul className="list-disc pl-6 lg:pl-8 font-[Poppins] text-base lg:text-lg leading-relaxed text-left">
+          </h2>
+          <ul className="list-disc pl-6 lg:pl-8 text-lg text-left font-[Poppins] text-stone-600 max-w-2xl">
             <li>Destination bus tickets</li>
             <li>Pick-up and drop from the destination bus stand</li>
             <li>Welcome drink on arrival</li>
@@ -144,10 +150,10 @@ const ShimlaManali = () => {
         </div>
 
         <div className="flex flex-col gap-6 lg:items-center lg:w-[70%]">
-          <h3 className="text-2xl lg:text-4xl leading-none">
+          <h2 className="text-2xl lg:text-4xl leading-none">
             Package Excludes
-          </h3>
-          <ul className="list-disc pl-6 lg:pl-8 font-[Poppins] text-base lg:text-lg leading-relaxed text-left">
+          </h2>
+          <ul className="list-disc pl-6 lg:pl-8 text-lg text-left font-[Poppins] text-stone-600 max-w-2xl">
             <li>Any monuments and entrance fees</li>
             <li>Any kind of activity charges</li>
             <li>Train, air, or bus tickets not listed in inclusions</li>
@@ -165,11 +171,11 @@ const ShimlaManali = () => {
 
         <form
           onSubmit={handleSubmit}
-          className="w-full lg:w-[60%] bg-stone-800/10 p-6 rounded-md flex flex-col gap-4"
+          className="w-full lg:w-[60%] bg-stone-800/10 mt-2 p-6 rounded-md flex flex-col gap-4"
         >
-          <h3 className="text-lg mb-2 text-left lg:text-center">
+          <h2 className="text-lg mb-2 text-left lg:text-center">
             Get This Package
-          </h3>
+          </h2>
           <input
             type="text"
             name="name"

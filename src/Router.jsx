@@ -1,5 +1,9 @@
-import React, { useEffect, useState } from "react";
-import { Route, Routes, BrowserRouter, useLocation } from "react-router-dom";
+import React from "react";
+import { useState } from "react";
+import { useEffect } from "react";
+import { Route } from "react-router-dom";
+import { Routes } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
 // Components
 import Home from "./pages/Home";
@@ -52,18 +56,31 @@ const AppRouter = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const handleLoad = () => {
-      setLoading(false);
+    const handleWindowLoad = () => {
+      // Optional delay for smooth UX
+      setTimeout(() => {
+        setLoading(false);
+      }, 500);
     };
 
     if (document.readyState === "complete") {
-      setLoading(false);
+      handleWindowLoad();
     } else {
-      window.addEventListener("load", handleLoad);
+      window.addEventListener("load", handleWindowLoad);
     }
 
-    return () => window.removeEventListener("load", handleLoad);
+    return () => {
+      window.removeEventListener("load", handleWindowLoad);
+    };
   }, []);
+
+  useEffect(() => {
+    if (loading) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [loading]);
 
   return <BrowserRouter>{loading ? <Loader /> : <AppRoutes />}</BrowserRouter>;
 };

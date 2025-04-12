@@ -70,10 +70,10 @@ const Nainital = () => {
             src={Image}
             alt="Nainital tour package"
             loading="lazy"
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105"
           />
         </div>
-        <p className="text-lg lg:text-xl font-medium font-[Poppins] lg:w-[70%]">
+        <p className="text-lg font-[Poppins] text-stone-600 max-w-2xl">
           Escape to the serene hills and sparkling lakes of Nainital with our 2
           Nights / 3 Days tour package. Whether you're boating on the famous
           Naini Lake or exploring scenic spots like Bhimtal and Sattal, this
@@ -81,10 +81,11 @@ const Nainital = () => {
         </p>
 
         <div className="flex flex-col gap-6 lg:items-center lg:text-left lg:w-[70%]">
-          <h3 className="text-2xl lg:text-4xl leading-none">Itinerary</h3>
-          <div className="text-base lg:text-lg font-[Poppins] leading-relaxed">
+          <h2 className="text-2xl lg:text-4xl leading-none">Itinerary</h2>
+          <div className="text-lg font-[Poppins] text-stone-600 max-w-2xl">
             <p>
-              <b>Day 1:</b> <i>Delhi - Nainital</i>
+              <b className="text-stone-800">Day 1:</b>{" "}
+              <i className="text-stone-800">Delhi - Nainital</i>
               <br />
               Pickup from Delhi and scenic drive to Nainital. After hotel
               check-in and fresh-up, explore Mall Road, Eco Cave Garden, Naini
@@ -94,7 +95,8 @@ const Nainital = () => {
             </p>
             <br />
             <p>
-              <b>Day 2:</b> <i>Nainital Lake Tour</i>
+              <b className="text-stone-800">Day 2:</b>{" "}
+              <i className="text-stone-800">Nainital Lake Tour</i>
               <br />
               Post breakfast, head out for a scenic lake tour covering Bhimtal,
               Sattal, Khurpatal, and Naukuchiatal. Evening return to hotel for
@@ -102,7 +104,8 @@ const Nainital = () => {
             </p>
             <br />
             <p>
-              <b>Day 3:</b> <i>Nainital - Delhi Drop</i>
+              <b className="text-stone-800">Day 3:</b>{" "}
+              <i className="text-stone-800">Nainital - Delhi Drop</i>
               <br />
               After breakfast, check out and drive back to Delhi. Trip ends with
               refreshing memories!
@@ -111,10 +114,10 @@ const Nainital = () => {
         </div>
 
         <div className="flex flex-col gap-6 lg:items-center lg:w-[70%]">
-          <h3 className="text-2xl lg:text-4xl leading-none">
+          <h2 className="text-2xl lg:text-4xl leading-none">
             Package Inclusions
-          </h3>
-          <ul className="list-disc pl-6 lg:pl-8 font-[Poppins] text-base lg:text-lg leading-relaxed text-left">
+          </h2>
+          <ul className="list-disc pl-6 lg:pl-8 text-lg text-left font-[Poppins] text-stone-600 max-w-2xl">
             <li>Pickup and Drop from Delhi Airport / Railway Station</li>
             <li>All Sightseeing by Private Cab</li>
             <li>Welcome Drink on Arrival</li>
@@ -125,10 +128,10 @@ const Nainital = () => {
         </div>
 
         <div className="flex flex-col gap-6 lg:items-center lg:w-[70%]">
-          <h3 className="text-2xl lg:text-4xl leading-none">
+          <h2 className="text-2xl lg:text-4xl leading-none">
             Package Excludes
-          </h3>
-          <ul className="list-disc pl-6 lg:pl-8 font-[Poppins] text-base lg:text-lg leading-relaxed text-left">
+          </h2>
+          <ul className="list-disc pl-6 lg:pl-8 text-lg text-left font-[Poppins] text-stone-600 max-w-2xl">
             <li>Any Monuments and Entrance Fee</li>
             <li>Any Kind of Activity Charges</li>
             <li>Train, Air, or Bus Tickets not listed in inclusions</li>
@@ -145,11 +148,11 @@ const Nainital = () => {
 
         <form
           onSubmit={handleSubmit}
-          className="w-full lg:w-[60%] bg-stone-800/10 p-6 rounded-md flex flex-col gap-4"
+          className="w-full lg:w-[60%] bg-stone-800/10 mt-2 p-6 rounded-md flex flex-col gap-4"
         >
-          <h3 className="text-lg mb-2 text-left lg:text-center">
+          <h2 className="text-lg mb-2 text-left lg:text-center">
             Get This Package
-          </h3>
+          </h2>
           <input
             type="text"
             name="name"

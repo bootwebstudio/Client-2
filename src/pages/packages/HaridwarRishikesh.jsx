@@ -68,12 +68,12 @@ const HaridwarRishikesh = () => {
         <div className="w-full lg:w-1/2 h-[35vh] lg:h-[60vh] rounded-md overflow-hidden">
           <img
             src={Image}
-            alt="Haridwar Rishikesh tour package"
+            alt="Haridwar - Rishikesh tour package"
             loading="lazy"
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105"
           />
         </div>
-        <p className="text-lg lg:text-xl font-medium font-[Poppins] lg:w-[70%]">
+        <p className="text-lg font-[Poppins] text-stone-600 max-w-2xl">
           A soulful escape into the spiritual heart of India. From the divine
           Ganga Aarti at Har-ki-Pauri to yoga and meditation in the peaceful
           ashrams of Rishikesh — this 3 Nights / 4 Days tour is the perfect
@@ -81,10 +81,13 @@ const HaridwarRishikesh = () => {
         </p>
 
         <div className="flex flex-col gap-6 lg:items-center lg:text-left lg:w-[70%]">
-          <h3 className="text-2xl lg:text-4xl leading-none">Itinerary</h3>
-          <div className="text-base lg:text-lg font-[Poppins] leading-relaxed">
+          <h2 className="text-2xl lg:text-4xl font-semibold leading-tight">
+            Itinerary
+          </h2>
+          <div className="text-lg font-[Poppins] text-stone-600 max-w-2xl">
             <p>
-              <b>Day 1:</b> <i>Delhi - Haridwar (230kms/6hr)</i>
+              <b className="text-stone-800">Day 1:</b>{" "}
+              <i className="text-stone-800">Delhi - Haridwar (230kms/6hr)</i>
               <br />
               Arrive in Delhi and drive to Haridwar. Check in to the hotel and
               relax. In the evening, visit Har-ki-Pauri for Ganga Aarti. Option
@@ -92,7 +95,8 @@ const HaridwarRishikesh = () => {
             </p>
             <br />
             <p>
-              <b>Day 2:</b> <i>Haridwar - Rishikesh (24kms/1hr)</i>
+              <b className="text-stone-800">Day 2:</b>{" "}
+              <i className="text-stone-800">Haridwar - Rishikesh (24kms/1hr)</i>
               <br />
               Visit local temples and ashrams in Haridwar, including Daksh
               Temple, Mansa Devi (ropeway), Chandi Devi, and more. Proceed to
@@ -101,14 +105,16 @@ const HaridwarRishikesh = () => {
             </p>
             <br />
             <p>
-              <b>Day 3:</b> <i>Rishikesh - Delhi</i>
+              <b className="text-stone-800">Day 3:</b>{" "}
+              <i className="text-stone-800">Rishikesh - Delhi</i>
               <br />
               After breakfast, visit remaining attractions in Rishikesh. Later
               in the afternoon, drive back to Delhi for an overnight stay.
             </p>
             <br />
             <p>
-              <b>Day 4:</b> <i>Departure from Delhi</i>
+              <b className="text-stone-800">Day 4:</b>{" "}
+              <i className="text-stone-800">Departure from Delhi</i>
               <br />
               After breakfast, enjoy sightseeing in Old and New Delhi — Red
               Fort, Raj Ghat, Jama Masjid, Qutub Minar, India Gate, and
@@ -118,10 +124,10 @@ const HaridwarRishikesh = () => {
         </div>
 
         <div className="flex flex-col gap-6 lg:items-center lg:w-[70%]">
-          <h3 className="text-2xl lg:text-4xl leading-none">
+          <h2 className="text-2xl lg:text-4xl font-semibold leading-tight">
             Package Inclusions
-          </h3>
-          <ul className="list-disc pl-6 lg:pl-8 font-[Poppins] text-base lg:text-lg leading-relaxed text-left">
+          </h2>
+          <ul className="list-disc pl-6 lg:pl-8 text-lg text-left font-[Poppins] text-stone-600 max-w-2xl">
             <li>Destination Bus Tickets</li>
             <li>Pick up & drop from Destination Bus Stand</li>
             <li>Welcome Drink on arrival</li>
@@ -131,10 +137,10 @@ const HaridwarRishikesh = () => {
         </div>
 
         <div className="flex flex-col gap-6 lg:items-center lg:w-[70%]">
-          <h3 className="text-2xl lg:text-4xl leading-none">
+          <h2 className="text-2xl lg:text-4xl font-semibold leading-tight">
             Package Excludes
-          </h3>
-          <ul className="list-disc pl-6 lg:pl-8 font-[Poppins] text-base lg:text-lg leading-relaxed text-left">
+          </h2>
+          <ul className="list-disc pl-6 lg:pl-8 text-lg text-left font-[Poppins] text-stone-600 max-w-2xl">
             <li>Monument & Entrance Fees</li>
             <li>Activity Charges</li>
             <li>Unmentioned Train, Air, or Bus Tickets</li>
@@ -151,11 +157,11 @@ const HaridwarRishikesh = () => {
 
         <form
           onSubmit={handleSubmit}
-          className="w-full lg:w-[60%] bg-stone-800/10 p-6 rounded-md flex flex-col gap-4"
+          className="w-full lg:w-[60%] bg-stone-800/10 mt-2 p-6 rounded-md flex flex-col gap-4"
         >
-          <h3 className="text-lg mb-2 text-left lg:text-center">
+          <h2 className="text-lg mb-2 text-left lg:text-center">
             Get This Package
-          </h3>
+          </h2>
           <input
             type="text"
             name="name"

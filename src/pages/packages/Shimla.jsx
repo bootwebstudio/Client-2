@@ -70,20 +70,21 @@ const Shimla = () => {
             src={Image}
             alt="Shimla tour package"
             loading="lazy"
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105"
           />
         </div>
-        <p className="text-lg lg:text-xl font-medium font-[Poppins] lg:w-[70%]">
+        <p className="text-lg font-[Poppins] text-stone-600 max-w-2xl">
           Escape to the hills of Shimla, the queen of Himachal, and enjoy serene
           landscapes, pine forests, and thrilling adventures with this 2 Nights
           / 3 Days tour package. Perfectly curated for a stress-free holiday.
         </p>
 
         <div className="flex flex-col gap-6 lg:items-center lg:text-left lg:w-[70%]">
-          <h3 className="text-2xl lg:text-4xl leading-none">Itinerary</h3>
-          <div className="text-base lg:text-lg font-[Poppins] leading-relaxed">
+          <h2 className="text-2xl lg:text-4xl leading-none">Itinerary</h2>
+          <div className="text-lg font-[Poppins] text-stone-600 max-w-2xl">
             <p>
-              <b>Day 1:</b> <i>Delhi to Shimla</i>
+              <b className="text-stone-800">Day 1:</b>{" "}
+              <i className="text-stone-800">Delhi to Shimla</i>
               <br />
               Pick-up from Delhi Airport/ Railway Station by our representative.
               Drive to Shimla via Kalka, Parwanoo, Barog, and Solan. Check in at
@@ -91,7 +92,8 @@ const Shimla = () => {
             </p>
             <br />
             <p>
-              <b>Day 2:</b> <i>Shimla Local Sightseeing</i>
+              <b className="text-stone-800">Day 2:</b>{" "}
+              <i className="text-stone-800">Shimla Local Sightseeing</i>
               <br />
               After breakfast, visit Indian Institute of Advanced Studies,
               Lakkar Bazaar, Christ Church (2nd oldest in North India), and
@@ -101,7 +103,8 @@ const Shimla = () => {
             </p>
             <br />
             <p>
-              <b>Day 3:</b> <i>Shimla to Delhi</i>
+              <b className="text-stone-800">Day 3:</b>{" "}
+              <i className="text-stone-800">Shimla to Delhi</i>
               <br />
               After breakfast, check out and proceed back to Delhi with sweet
               memories.
@@ -110,10 +113,10 @@ const Shimla = () => {
         </div>
 
         <div className="flex flex-col gap-6 lg:items-center lg:w-[70%]">
-          <h3 className="text-2xl lg:text-4xl leading-none">
+          <h2 className="text-2xl lg:text-4xl leading-none">
             Package Inclusions
-          </h3>
-          <ul className="list-disc pl-6 lg:pl-8 font-[Poppins] text-base lg:text-lg leading-relaxed text-left">
+          </h2>
+          <ul className="list-disc pl-6 lg:pl-8 text-lg text-left font-[Poppins] text-stone-600 max-w-2xl">
             <li>Accommodation on twin sharing basis</li>
             <li>Breakfast and Dinner at Hotel</li>
             <li>A.C. car for the entire trip as per itinerary</li>
@@ -123,10 +126,10 @@ const Shimla = () => {
         </div>
 
         <div className="flex flex-col gap-6 lg:items-center lg:w-[70%]">
-          <h3 className="text-2xl lg:text-4xl leading-none">
+          <h2 className="text-2xl lg:text-4xl leading-none">
             Package Excludes
-          </h3>
-          <ul className="list-disc pl-6 lg:pl-8 font-[Poppins] text-base lg:text-lg leading-relaxed text-left">
+          </h2>
+          <ul className="list-disc pl-6 lg:pl-8 text-lg text-left font-[Poppins] text-stone-600 max-w-2xl">
             <li>Air/train fare</li>
             <li>Expenses for optional activities</li>
             <li>Items of personal nature like portage, tips, laundry</li>
@@ -146,11 +149,11 @@ const Shimla = () => {
 
         <form
           onSubmit={handleSubmit}
-          className="w-full lg:w-[60%] bg-stone-800/10 p-6 rounded-md flex flex-col gap-4"
+          className="w-full lg:w-[60%] bg-stone-800/10 mt-2 p-6 rounded-md flex flex-col gap-4"
         >
-          <h3 className="text-lg mb-2 text-left lg:text-center">
+          <h2 className="text-lg mb-2 text-left lg:text-center">
             Get This Package
-          </h3>
+          </h2>
           <input
             type="text"
             name="name"

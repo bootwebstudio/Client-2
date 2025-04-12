@@ -259,7 +259,7 @@ const Home = () => {
         <h2 className="text-2xl lg:text-4xl leading-none font-bold">
           ABOUT US
         </h2>
-        <p className="w-full lg:w-[60%] text-lg lg:text-xl text-center leading-tight font-medium font-[Poppins]">
+        <p className="text-lg font-[Poppins] text-stone-600 text-center max-w-2xl">
           RK Travels makes your dream vacations easy and affordable. From
           mountains to beaches, we plan every trip with care so you can travel
           stress-free and enjoy every moment.
@@ -269,7 +269,7 @@ const Home = () => {
           India's best spots without breaking the bank. Travel smart. Travel
           happy. Travel with RK Travels.
         </p>
-        <div className="w-full xl:w-[80%] p-12 px-0 rounded-xl flex flex-col md:flex-row gap-8 items-center justify-center bg-stone-800/15">
+        <div className="w-full xl:w-[80%] p-12 px-0 rounded-2xl flex flex-col md:flex-row gap-8 items-center justify-center bg-stone-800/15">
           <div className="flex gap-4 md:gap-6 flex-col items-center">
             <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-none font-bold text-blue-500">
               100+
@@ -339,7 +339,7 @@ const Home = () => {
         >
           {testimonials.map((src, index) => (
             <SwiperSlide key={index}>
-              <div className="w-full h-[60vh] lg:h-[50vh] xl:h-[60vh] rounded-xl overflow-hidden">
+              <div className="w-full h-[60vh] lg:h-[50vh] xl:h-[60vh] rounded-2xl overflow-hidden">
                 <video
                   ref={(el) => (videoRefs.current[index] = el)}
                   className="w-full h-full object-cover object-center cursor-pointer"
@@ -359,21 +359,23 @@ const Home = () => {
       </div>
 
       {/* CTA Section */}
-      <div className="w-full p-12 px-6 lg:p-14 flex flex-col items-center gap-8 lg:gap-12">
-        <div className="w-full xl:w-[80%] p-8 px-6 md:p-12 rounded-xl flex flex-col gap-8 lg:items-center justify-center bg-stone-800/15">
-          <h2 className="lg:px-12 text-lg lg:text-3xl text-center lg:leading-relaxed">
-            Looking for the perfect trip? Start by exploring all our packages
-            tailored just for you.
+      <div className="w-full p-10 px-6 lg:p-14 flex flex-col items-center">
+        <div className="w-full max-w-5xl p-8 md:p-14 rounded-2xl bg-stone-800/15 flex flex-col items-center gap-8 text-center">
+          <h2 className="text-2xl lg:text-4xl font-semibold text-stone-800 leading-tight">
+            Find Your Dream Destination
           </h2>
-
+          <p className="text-lg font-[Poppins] text-stone-600 max-w-2xl">
+            Whether it's snowy mountains, sunny beaches, or serene valleys —
+            we've got packages crafted just for you. Let's help you create
+            unforgettable memories.
+          </p>
           <Link to="/packages" className="w-full lg:w-fit">
-            <button className="w-full lg:w-fit p-4 px-6 lg:px-12 lg:text-xl font-semibold capitalize rounded-md font-[Poppins] text-white bg-stone-800">
-              Discover your perfect trip
+            <button className="p-4 px-8 lg:px-12 bg-stone-800 text-white text-lg lg:text-lg font-medium font-[Poppins] rounded-full">
+              Explore Packages
             </button>
           </Link>
         </div>
       </div>
-
       {/* Footer */}
       <Footer />
     </div>

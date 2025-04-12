@@ -65,39 +65,45 @@ const Goa = () => {
         <h2 className="text-xl lg:text-4xl text-center leading-none">
           Goa Tour
         </h2>
-        <div className="w-full lg:w-1/2 h-[35vh] lg:h-[60vh] rounded-md overflow-hidden">
+        <div className="w-full lg:w-[60%] h-[40vh] lg:h-[65vh] overflow-hidden rounded-2xl shadow-lg">
           <img
             src={Image}
             alt="Goa tour package"
             loading="lazy"
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105"
           />
         </div>
-        <p className="text-lg lg:text-xl font-medium font-[Poppins] lg:w-[70%]">
+        <p className="text-lg font-[Poppins] text-stone-600 max-w-2xl">
           Experience sun, sand, and serenity with our 2 Nights / 3 Days Goa Tour
           Package. Relax by the beach, explore historical churches, and indulge
           in Goa's vibrant culture — all packed in one perfect getaway.
         </p>
 
         <div className="flex flex-col gap-6 lg:items-center lg:text-left lg:w-[70%]">
-          <h3 className="text-2xl lg:text-4xl leading-none">Itinerary</h3>
-          <div className="text-base lg:text-lg font-[Poppins] leading-relaxed">
+          <h2 className="text-2xl lg:text-4xl font-semibold leading-tight">
+            Itinerary
+          </h2>
+          <div className="text-lg font-[Poppins] text-stone-600 max-w-2xl">
             <p>
-              <b>Day 1:</b> <i>Arrival at Railway Station or Airport</i>
+              <b className="text-stone-800">Day 1:</b>{" "}
+              <i className="text-stone-800">
+                Arrival at Railway Station or Airport
+              </i>
               <br />
               Arrival at the station or airport, pick-up, and drop at the hotel.
               Comfortable stay and overnight at the hotel.
             </p>
             <br />
             <p>
-              <b>Day 2:</b> <i>Sightseeing of South Goa</i>
+              <b className="text-stone-800">Day 2:</b>{" "}
+              <i className="text-stone-800">Sightseeing of South Goa</i>
               <br />
               After breakfast, proceed for South Goa sightseeing and return for
               an overnight stay at the hotel.
             </p>
             <br />
             <p>
-              <b>South Goa Tour Highlights:</b>
+              <b className="text-stone-800">South Goa Tour Highlights:</b>
               <br />
               Miramar Beach: A golden beach facing the Arabian Sea in Panaji.
               <br />
@@ -112,7 +118,8 @@ const Goa = () => {
             </p>
             <br />
             <p>
-              <b>Day 3:</b> <i>Departure</i>
+              <b className="text-stone-800">Day 3:</b>{" "}
+              <i className="text-stone-800">Departure</i>
               <br />
               After breakfast, check out from the hotel and transfer to the
               railway station or airport for your return journey.
@@ -121,10 +128,10 @@ const Goa = () => {
         </div>
 
         <div className="flex flex-col gap-6 lg:items-center lg:w-[70%]">
-          <h3 className="text-2xl lg:text-4xl leading-none">
+          <h2 className="text-2xl lg:text-4xl font-semibold leading-tight">
             Package Inclusions
-          </h3>
-          <ul className="list-disc pl-6 lg:pl-8 font-[Poppins] text-base lg:text-lg leading-relaxed text-left">
+          </h2>
+          <ul className="list-disc pl-6 lg:pl-8 text-lg text-left font-[Poppins] text-stone-600 max-w-2xl">
             <li>Welcome Drink on Arrival (Non-Alcoholic)</li>
             <li>1 Day Sightseeing (South Goa)</li>
             <li>Accommodation in A/C Standard Rooms</li>
@@ -143,11 +150,11 @@ const Goa = () => {
 
         <form
           onSubmit={handleSubmit}
-          className="w-full lg:w-[60%] bg-stone-800/10 p-6 rounded-md flex flex-col gap-4"
+          className="w-full lg:w-[60%] bg-stone-800/10 mt-2 p-6 rounded-md flex flex-col gap-4"
         >
-          <h3 className="text-lg mb-2 text-left lg:text-center">
+          <h2 className="text-lg mb-2 text-left lg:text-center">
             Get This Package
-          </h3>
+          </h2>
           <input
             type="text"
             name="name"
