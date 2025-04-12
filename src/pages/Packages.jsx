@@ -80,7 +80,7 @@ const Packages = () => {
     <div className="w-full h-full font-[Boldonse] text-stone-800 bg-white">
       <Navbar />
       <div className="w-full p-10 px-6 lg:p-12 flex flex-col gap-8 lg:gap-12">
-        <h2 className="text-2xl lg:text-4xl text-center leading-none">
+        <h2 className="text-2xl lg:text-4xl font-bold text-center leading-none">
           ALL PACKAGES
         </h2>
 
