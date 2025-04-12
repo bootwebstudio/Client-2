@@ -138,7 +138,10 @@ const Home = () => {
   return (
     <div className="w-full h-full font-[Boldonse] text-stone-800 bg-white">
       {/* Hero Section */}
-      <div className="w-full h-screen flex flex-col relative text-white bg-[url('./Hero.jpg')] bg-cover bg-center">
+      <div
+        className="w-full h-screen flex flex-col relative text-white bg-cover bg-center"
+        style={{ backgroundImage: "url('./Hero.jpg')" }}
+      >
         {/* Black overlay */}
         <div className="absolute inset-0 bg-black/40 lg:bg-black/25 z-0"></div>
 
