@@ -22,6 +22,7 @@ const packages = [
     title: "Manali Tour Package",
     price: 4499,
     rating: "4.5/5",
+    duration: "4 Nights & 5 Days",
     image: Manali,
     link: "/packages/manali",
   },
@@ -29,6 +30,7 @@ const packages = [
     title: "Shimla Tour Package",
     price: 5499,
     rating: "4.8/5",
+    duration: "4 Nights & 5 Days",
     image: Shimla,
     link: "/packages/shimla",
   },
@@ -36,6 +38,7 @@ const packages = [
     title: "Goa Tour Package",
     price: 7499,
     rating: "4.2/5",
+    duration: "3 Nights & 4 Days",
     image: Goa,
     link: "/packages/goa",
   },
@@ -43,6 +46,7 @@ const packages = [
     title: "Nainital Tour Package",
     price: 6499,
     rating: "4.0/5",
+    duration: "4 Nights & 5 Days",
     image: Nainital,
     link: "/packages/nainital",
   },
@@ -50,6 +54,7 @@ const packages = [
     title: "Shimla - Manali Tour Package",
     price: 10499,
     rating: "4.1/5",
+    duration: "7 Nights & 8 Days",
     image: ShimlaManali,
     link: "/packages/shimla-manali",
   },
@@ -57,6 +62,7 @@ const packages = [
     title: "Kashmir Tour Package",
     price: 8999,
     rating: "4.8/5",
+    duration: "3 Nights & 4 Days",
     image: Kashmir,
     link: "/packages/kashmir",
   },
@@ -64,6 +70,7 @@ const packages = [
     title: "Uttarakhand Tour Package",
     price: 15499,
     rating: "4.0/5",
+    duration: "6 Nights & 7 Days",
     image: Uttarakhand,
     link: "/packages/uttarakhand",
   },
@@ -71,11 +78,11 @@ const packages = [
     title: "Haridwar - Rishikesh Tour Package",
     price: 5499,
     rating: "4.3/5",
+    duration: "4 Nights & 5 Days",
     image: HaridwarRishikesh,
     link: "/packages/haridwar-rishikesh",
   },
 ];
-
 const Packages = () => {
   return (
     <div className="w-full h-full font-[Boldonse] text-stone-800 bg-white">
@@ -98,6 +105,9 @@ const Packages = () => {
               </div>
               <div className="pt-4 px-0 flex gap-2 flex-col font-[Poppins]">
                 <h2 className="text-xl font-bold leading-none">{pkg.title}</h2>
+                <h2 className="p-0.5 px-0 font-semibold leading-none">
+                  {pkg.duration}
+                </h2>
                 <div className="flex gap-6 justify-between">
                   <div className="flex gap-[4px] items-center">
                     <span className="font-bold">{`₹${pkg.price}/person`}</span>
