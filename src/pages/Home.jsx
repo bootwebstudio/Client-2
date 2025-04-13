@@ -151,7 +151,7 @@ const Home = () => {
         style={{ backgroundImage: "url('./Hero.webp')" }}
       >
         {/* Black overlay */}
-        <div className="absolute inset-0 bg-black/50 z-0"></div>
+        <div className="absolute inset-0 bg-black/40 z-0"></div>
 
         <Navbar />
 
