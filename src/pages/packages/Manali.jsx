@@ -60,151 +60,187 @@ const Manali = () => {
   };
 
   return (
-    <div className="w-full h-full font-[Boldonse] text-stone-800 bg-white">
-      <Navbar />
-      <div className="w-full p-10 px-6 lg:p-14 flex flex-col gap-8 lg:gap-12 lg:items-center lg:justify-center lg:text-center">
-        <h2 className="text-xl lg:text-4xl text-center leading-none">
-          Manali Tour
-        </h2>
-        <div className="w-full lg:w-1/2 h-[35vh] lg:h-[60vh] rounded-md overflow-hidden">
-          <img
-            src={Image}
-            alt="Manali tour package"
-            loading="lazy"
-            className="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105"
-          />
-        </div>
-        <p className="text-lg font-[Poppins] text-stone-600 max-w-2xl">
-          Breathe in crisp mountain air and escape to the magical charm of
-          Manali with our perfectly planned 4 Nights / 5 Days tour package.
-          Whether you're chasing snowflakes in Solang Valley or soaking in the
-          serenity of Kasol, we'll take care of everything — all you need to do
-          is pack your bags.
-        </p>
+    <>
+      <Helmet>
+        <title>
+          Manali Tour Package - 4N/5D Trip from Delhi | RK Travels Sahab
+        </title>
+        <meta
+          name="description"
+          content="Book your 4 Nights / 5 Days Manali Tour Package with RK Travels Sahab. Enjoy Mall Road, Solang Valley, Kasol & more. Volvo, hotel, food, & private sightseeing included from just ₹4499."
+        />
+        <meta
+          name="keywords"
+          content="Manali tour package, Manali from Delhi, Manali 4N 5D, Solang Valley, Kasol tour, RK Travels Sahab, affordable Manali trip, Himachal tour, manali sightseeing"
+        />
+        <meta
+          property="og:title"
+          content="Manali Tour Package from Delhi | 4 Nights 5 Days | RK Travels Sahab"
+        />
+        <meta
+          property="og:description"
+          content="Escape to Manali with our 4N/5D package including Volvo tickets, hotel, food & sightseeing. Adventure in Solang Valley, peace in Kasol. Starting at ₹4499."
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://www.rktravelssahab.com/packages/manali"
+        />
+        <meta property="og:image" content={Image} />
 
-        <div className="flex flex-col gap-6 lg:items-center lg:text-left lg:w-[70%]">
-          <h2 className="text-2xl lg:text-4xl leading-none">Itinerary</h2>
-          <div className="text-lg font-[Poppins] text-stone-600 max-w-2xl">
-            <p>
-              <b className="text-stone-800">Day 1:</b>{" "}
-              <i className="text-stone-800">Delhi - Manali</i>
-              <br />
-              Board your Volvo from Delhi at 5:00 PM for an overnight journey
-              through the hills toward Manali.
-            </p>
-            <br />
-            <p>
-              <b className="text-stone-800">Day 2:</b>{" "}
-              <i className="text-stone-800">Manali Sightseeing</i>
-              <br />
-              Arrive in Manali and check into the hotel. After freshening up,
-              explore Mall Road, Hidimba Devi Temple, Van Vihar, Vashisht
-              Temple, and Club House. Return for dinner and overnight stay.
-            </p>
-            <br />
-            <p>
-              <b className="text-stone-800">Day 3:</b>{" "}
-              <i className="text-stone-800">Solang Valley Adventure</i>
-              <br />
-              Enjoy a full day at Solang Valley — try snow activities
-              (seasonal). Return by evening, dinner, and overnight stay at the
-              hotel.
-            </p>
-            <br />
-            <p>
-              <b className="text-stone-800">Day 4:</b>{" "}
-              <i className="text-stone-800">Kasol & Manikaran</i>
-              <br />
-              Visit Kullu, Manikaran Sahib, Vaishno Temple, Kasol Valley, and
-              River Rafting points. By 6:00 PM, board your return Volvo to
-              Delhi.
-            </p>
-            <br />
-            <p>
-              <b className="text-stone-800">Day 5:</b>{" "}
-              <i className="text-stone-800">Arrival in Delhi</i>
-              <br />
-              Morning arrival at Delhi. Trip ends with great memories!
-            </p>
+        {/* Replace with actual image URL */}
+        <link
+          rel="canonical"
+          href="https://www.rktravelssahab.com/packages/manali"
+        />
+      </Helmet>
+
+      <div className="w-full h-full font-[Boldonse] text-stone-800 bg-white">
+        <Navbar />
+        <div className="w-full p-10 px-6 lg:p-14 flex flex-col gap-8 lg:gap-12 lg:items-center lg:justify-center lg:text-center">
+          <h2 className="text-xl lg:text-4xl text-center leading-none">
+            Manali Tour
+          </h2>
+          <div className="w-full lg:w-1/2 h-[35vh] lg:h-[60vh] rounded-md overflow-hidden">
+            <img
+              src={Image}
+              alt="Manali tour package"
+              loading="lazy"
+              className="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105"
+            />
           </div>
-        </div>
+          <p className="text-lg font-[Poppins] text-stone-600 max-w-2xl">
+            Breathe in crisp mountain air and escape to the magical charm of
+            Manali with our perfectly planned 4 Nights / 5 Days tour package.
+            Whether you're chasing snowflakes in Solang Valley or soaking in the
+            serenity of Kasol, we'll take care of everything — all you need to
+            do is pack your bags.
+          </p>
 
-        <div className="flex flex-col gap-6 lg:items-center lg:w-[70%]">
-          <h2 className="text-2xl lg:text-4xl leading-none">
-            Package Inclusions
-          </h2>
-          <ul className="list-disc pl-6 lg:pl-8 text-lg text-left font-[Poppins] text-stone-600 max-w-2xl">
-            <li>Delhi - Manali - Delhi Volvo Tickets</li>
-            <li>Pick up & drop from Manali Bus Stand</li>
-            <li>Welcome Drink on arrival</li>
-            <li>2 Breakfasts & 2 Dinners</li>
-            <li>All Transfers and Sightseeing by Private Car</li>
-          </ul>
-        </div>
+          <div className="flex flex-col gap-6 lg:items-center lg:text-left lg:w-[70%]">
+            <h2 className="text-2xl lg:text-4xl leading-none">Itinerary</h2>
+            <div className="text-lg font-[Poppins] text-stone-600 max-w-2xl">
+              <p>
+                <b className="text-stone-800">Day 1:</b>{" "}
+                <i className="text-stone-800">Delhi - Manali</i>
+                <br />
+                Board your Volvo from Delhi at 5:00 PM for an overnight journey
+                through the hills toward Manali.
+              </p>
+              <br />
+              <p>
+                <b className="text-stone-800">Day 2:</b>{" "}
+                <i className="text-stone-800">Manali Sightseeing</i>
+                <br />
+                Arrive in Manali and check into the hotel. After freshening up,
+                explore Mall Road, Hidimba Devi Temple, Van Vihar, Vashisht
+                Temple, and Club House. Return for dinner and overnight stay.
+              </p>
+              <br />
+              <p>
+                <b className="text-stone-800">Day 3:</b>{" "}
+                <i className="text-stone-800">Solang Valley Adventure</i>
+                <br />
+                Enjoy a full day at Solang Valley — try snow activities
+                (seasonal). Return by evening, dinner, and overnight stay at the
+                hotel.
+              </p>
+              <br />
+              <p>
+                <b className="text-stone-800">Day 4:</b>{" "}
+                <i className="text-stone-800">Kasol & Manikaran</i>
+                <br />
+                Visit Kullu, Manikaran Sahib, Vaishno Temple, Kasol Valley, and
+                River Rafting points. By 6:00 PM, board your return Volvo to
+                Delhi.
+              </p>
+              <br />
+              <p>
+                <b className="text-stone-800">Day 5:</b>{" "}
+                <i className="text-stone-800">Arrival in Delhi</i>
+                <br />
+                Morning arrival at Delhi. Trip ends with great memories!
+              </p>
+            </div>
+          </div>
 
-        <div className="flex flex-col gap-6 lg:items-center lg:w-[70%]">
-          <h2 className="text-2xl lg:text-4xl leading-none">
-            Package Excludes
-          </h2>
-          <ul className="list-disc pl-6 lg:pl-8 text-lg text-left font-[Poppins] text-stone-600 max-w-2xl">
-            <li>Monument Entry Fees</li>
-            <li>Adventure Activity Charges</li>
-            <li>Train, Air, or Bus tickets not listed in inclusions</li>
-            <li>Lunches, Room Heaters</li>
-            <li>Expenses of Personal Nature</li>
-            <li>Snow Vehicle Charges if roads are blocked due to snow</li>
-            <li>5% GST</li>
-          </ul>
-        </div>
+          <div className="flex flex-col gap-6 lg:items-center lg:w-[70%]">
+            <h2 className="text-2xl lg:text-4xl leading-none">
+              Package Inclusions
+            </h2>
+            <ul className="list-disc pl-6 lg:pl-8 text-lg text-left font-[Poppins] text-stone-600 max-w-2xl">
+              <li>Delhi - Manali - Delhi Volvo Tickets</li>
+              <li>Pick up & drop from Manali Bus Stand</li>
+              <li>Welcome Drink on arrival</li>
+              <li>2 Breakfasts & 2 Dinners</li>
+              <li>All Transfers and Sightseeing by Private Car</li>
+            </ul>
+          </div>
 
-        <div className="text-lg lg:text-2xl leading-none lg:w-[70%]">
-          Starting from <span className="text-green-600">₹4499/-</span>
-        </div>
+          <div className="flex flex-col gap-6 lg:items-center lg:w-[70%]">
+            <h2 className="text-2xl lg:text-4xl leading-none">
+              Package Excludes
+            </h2>
+            <ul className="list-disc pl-6 lg:pl-8 text-lg text-left font-[Poppins] text-stone-600 max-w-2xl">
+              <li>Monument Entry Fees</li>
+              <li>Adventure Activity Charges</li>
+              <li>Train, Air, or Bus tickets not listed in inclusions</li>
+              <li>Lunches, Room Heaters</li>
+              <li>Expenses of Personal Nature</li>
+              <li>Snow Vehicle Charges if roads are blocked due to snow</li>
+              <li>5% GST</li>
+            </ul>
+          </div>
 
-        <form
-          onSubmit={handleSubmit}
-          className="w-full lg:w-[60%] bg-stone-800/10 mt-2 p-6 rounded-md flex flex-col gap-4"
-        >
-          <h2 className="text-lg mb-2 text-left lg:text-center">
-            Get This Package
-          </h2>
-          <input
-            type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            placeholder="Your Name"
-            required
-            className="p-4 rounded-md border font-medium font-[Poppins] border-stone-300"
-          />
-          <input
-            type="tel"
-            name="phone"
-            value={formData.phone}
-            onChange={handleChange}
-            placeholder="Phone Number"
-            required
-            className="p-4 rounded-md border font-medium font-[Poppins] border-stone-300"
-          />
-          <input
-            type="number"
-            name="people"
-            value={formData.people}
-            onChange={handleChange}
-            placeholder="No. of People"
-            required
-            className="p-4 rounded-md border font-medium font-[Poppins] border-stone-300"
-          />
-          <button
-            type="submit"
-            className="bg-stone-800 text-white px-6 p-4 text-sm rounded-md"
+          <div className="text-lg lg:text-2xl leading-none lg:w-[70%]">
+            Starting from <span className="text-green-600">₹4499/-</span>
+          </div>
+
+          <form
+            onSubmit={handleSubmit}
+            className="w-full lg:w-[60%] bg-stone-800/10 mt-2 p-6 rounded-md flex flex-col gap-4"
           >
-            Book Your Seat
-          </button>
-        </form>
+            <h2 className="text-lg mb-2 text-left lg:text-center">
+              Get This Package
+            </h2>
+            <input
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              placeholder="Your Name"
+              required
+              className="p-4 rounded-md border font-medium font-[Poppins] border-stone-300"
+            />
+            <input
+              type="tel"
+              name="phone"
+              value={formData.phone}
+              onChange={handleChange}
+              placeholder="Phone Number"
+              required
+              className="p-4 rounded-md border font-medium font-[Poppins] border-stone-300"
+            />
+            <input
+              type="number"
+              name="people"
+              value={formData.people}
+              onChange={handleChange}
+              placeholder="No. of People"
+              required
+              className="p-4 rounded-md border font-medium font-[Poppins] border-stone-300"
+            />
+            <button
+              type="submit"
+              className="bg-stone-800 text-white px-6 p-4 text-sm rounded-md"
+            >
+              Book Your Seat
+            </button>
+          </form>
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </>
   );
 };
 

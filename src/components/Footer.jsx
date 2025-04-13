@@ -57,7 +57,9 @@ const Footer = () => {
             <div className="flex gap-2 flex-col">
               <div className="w-fit text-lg flex items-center gap-2">
                 <i className="ri-phone-fill" />
-                <span className="leading-none">+91 88821 85796, +91 95822 99035</span>
+                <span className="leading-none">
+                  +91 88821 85796, +91 95822 99035
+                </span>
               </div>
               <div className="w-fit text-lg flex items-center gap-2">
                 <i className="ri-mail-fill" />
@@ -74,9 +76,17 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Line */}
+      {/* Bootweb Studio */}
       <div className="p-6 px-0 text-sm text-center border-t border-stone-200">
-        © {new Date().getFullYear()} RK Travels. All rights reserved.
+        Designed by{" "}
+        <a
+          href="https://bootwebstudio.github.io/Portfolio/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline"
+        >
+          Bootweb Studio
+        </a>
       </div>
     </div>
   );

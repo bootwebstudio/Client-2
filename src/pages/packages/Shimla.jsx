@@ -60,138 +60,176 @@ const Shimla = () => {
   };
 
   return (
-    <div className="w-full h-full font-[Boldonse] text-stone-800 bg-white">
-      <Navbar />
-      <div className="w-full p-10 px-6 lg:p-14 flex flex-col gap-8 lg:gap-12 lg:items-center lg:justify-center lg:text-center">
-        <h2 className="text-xl lg:text-4xl text-center leading-none">
-          Shimla Tour
-        </h2>
-        <div className="w-full lg:w-1/2 h-[35vh] lg:h-[60vh] rounded-md overflow-hidden">
-          <img
-            src={Image}
-            alt="Shimla tour package"
-            loading="lazy"
-            className="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105"
-          />
-        </div>
-        <p className="text-lg font-[Poppins] text-stone-600 max-w-2xl">
-          Escape to the hills of Shimla, the queen of Himachal, and enjoy serene
-          landscapes, pine forests, and thrilling adventures with this 2 Nights
-          / 3 Days tour package. Perfectly curated for a stress-free holiday.
-        </p>
+    <>
+      <Helmet>
+        <title>
+          Shimla Tour Package - 4N/5D Trip from Delhi | RK Travels Sahab
+        </title>
+        <meta
+          name="description"
+          content="Book a 4 Nights / 5 Days Shimla Tour Package with RK Travels Sahab. Includes Delhi pick-up, hotel, meals, local sightseeing & more. Stress-free holidays starting from ₹5499."
+        />
+        <meta
+          name="keywords"
+          content="Shimla tour package, Delhi to Shimla trip, 4 nights Shimla holiday, Shimla local sightseeing, Mall Road, Jakhu Temple, RK Travels Sahab"
+        />
+        <meta
+          property="og:title"
+          content="Shimla Tour Package from Delhi | 4 Nights 5 Days | RK Travels Sahab"
+        />
+        <meta
+          property="og:description"
+          content="Escape to Shimla with our 4N/5D holiday package from Delhi. Hotel, food, sightseeing & travel included. Book now for a relaxing trip to the queen of hills."
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://rktravelssahab.com/packages/shimla"
+        />
+        <meta property="og:image" content={Image} />
 
-        <div className="flex flex-col gap-6 lg:items-center lg:text-left lg:w-[70%]">
-          <h2 className="text-2xl lg:text-4xl leading-none">Itinerary</h2>
-          <div className="text-lg font-[Poppins] text-stone-600 max-w-2xl">
-            <p>
-              <b className="text-stone-800">Day 1:</b>{" "}
-              <i className="text-stone-800">Delhi to Shimla</i>
-              <br />
-              Pick-up from Delhi Airport/ Railway Station by our representative.
-              Drive to Shimla via Kalka, Parwanoo, Barog, and Solan. Check in at
-              the hotel and relax. Overnight stay at Shimla.
-            </p>
-            <br />
-            <p>
-              <b className="text-stone-800">Day 2:</b>{" "}
-              <i className="text-stone-800">Shimla Local Sightseeing</i>
-              <br />
-              After breakfast, visit Indian Institute of Advanced Studies,
-              Lakkar Bazaar, Christ Church (2nd oldest in North India), and
-              Jakhu Temple at the top of Jakhu Hill. Enjoy the evening at Mall
-              Road for shopping and entertainment. Overnight stay at Shimla
-              hotel.
-            </p>
-            <br />
-            <p>
-              <b className="text-stone-800">Day 3:</b>{" "}
-              <i className="text-stone-800">Shimla to Delhi</i>
-              <br />
-              After breakfast, check out and proceed back to Delhi with sweet
-              memories.
-            </p>
+        {/* Replace with actual image URL */}
+        <link
+          rel="canonical"
+          href="https://rktravelssahab.com/packages/shimla"
+        />
+      </Helmet>
+
+      <div className="w-full h-full font-[Boldonse] text-stone-800 bg-white">
+        <Navbar />
+        <div className="w-full p-10 px-6 lg:p-14 flex flex-col gap-8 lg:gap-12 lg:items-center lg:justify-center lg:text-center">
+          <h2 className="text-xl lg:text-4xl text-center leading-none">
+            Shimla Tour
+          </h2>
+          <div className="w-full lg:w-1/2 h-[35vh] lg:h-[60vh] rounded-md overflow-hidden">
+            <img
+              src={Image}
+              alt="Shimla tour package"
+              loading="lazy"
+              className="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105"
+            />
           </div>
-        </div>
+          <p className="text-lg font-[Poppins] text-stone-600 max-w-2xl">
+            Escape to the hills of Shimla, the queen of Himachal, and enjoy
+            serene landscapes, pine forests, and thrilling adventures with this
+            2 Nights / 3 Days tour package. Perfectly curated for a stress-free
+            holiday.
+          </p>
 
-        <div className="flex flex-col gap-6 lg:items-center lg:w-[70%]">
-          <h2 className="text-2xl lg:text-4xl leading-none">
-            Package Inclusions
-          </h2>
-          <ul className="list-disc pl-6 lg:pl-8 text-lg text-left font-[Poppins] text-stone-600 max-w-2xl">
-            <li>Accommodation on twin sharing basis</li>
-            <li>Breakfast and Dinner at Hotel</li>
-            <li>A.C. car for the entire trip as per itinerary</li>
-            <li>Toll taxes, parking, driver charges</li>
-            <li>All applicable hotel taxes</li>
-          </ul>
-        </div>
+          <div className="flex flex-col gap-6 lg:items-center lg:text-left lg:w-[70%]">
+            <h2 className="text-2xl lg:text-4xl leading-none">Itinerary</h2>
+            <div className="text-lg font-[Poppins] text-stone-600 max-w-2xl">
+              <p>
+                <b className="text-stone-800">Day 1:</b>{" "}
+                <i className="text-stone-800">Delhi to Shimla</i>
+                <br />
+                Pick-up from Delhi Airport/ Railway Station by our
+                representative. Drive to Shimla via Kalka, Parwanoo, Barog, and
+                Solan. Check in at the hotel and relax. Overnight stay at
+                Shimla.
+              </p>
+              <br />
+              <p>
+                <b className="text-stone-800">Day 2:</b>{" "}
+                <i className="text-stone-800">Shimla Local Sightseeing</i>
+                <br />
+                After breakfast, visit Indian Institute of Advanced Studies,
+                Lakkar Bazaar, Christ Church (2nd oldest in North India), and
+                Jakhu Temple at the top of Jakhu Hill. Enjoy the evening at Mall
+                Road for shopping and entertainment. Overnight stay at Shimla
+                hotel.
+              </p>
+              <br />
+              <p>
+                <b className="text-stone-800">Day 3:</b>{" "}
+                <i className="text-stone-800">Shimla to Delhi</i>
+                <br />
+                After breakfast, check out and proceed back to Delhi with sweet
+                memories.
+              </p>
+            </div>
+          </div>
 
-        <div className="flex flex-col gap-6 lg:items-center lg:w-[70%]">
-          <h2 className="text-2xl lg:text-4xl leading-none">
-            Package Excludes
-          </h2>
-          <ul className="list-disc pl-6 lg:pl-8 text-lg text-left font-[Poppins] text-stone-600 max-w-2xl">
-            <li>Air/train fare</li>
-            <li>Expenses for optional activities</li>
-            <li>Items of personal nature like portage, tips, laundry</li>
-            <li>
-              Any unforeseen expenses due to natural calamities, delay, or
-              strike
-            </li>
-            <li>Additional meals other than mentioned</li>
-            <li>Anything not mentioned in Inclusions</li>
-            <li>5% GST</li>
-          </ul>
-        </div>
+          <div className="flex flex-col gap-6 lg:items-center lg:w-[70%]">
+            <h2 className="text-2xl lg:text-4xl leading-none">
+              Package Inclusions
+            </h2>
+            <ul className="list-disc pl-6 lg:pl-8 text-lg text-left font-[Poppins] text-stone-600 max-w-2xl">
+              <li>Accommodation on twin sharing basis</li>
+              <li>Breakfast and Dinner at Hotel</li>
+              <li>A.C. car for the entire trip as per itinerary</li>
+              <li>Toll taxes, parking, driver charges</li>
+              <li>All applicable hotel taxes</li>
+            </ul>
+          </div>
 
-        <div className="text-lg lg:text-2xl leading-none lg:w-[70%]">
-          Starting from <span className="text-green-600">₹5499/-</span>
-        </div>
+          <div className="flex flex-col gap-6 lg:items-center lg:w-[70%]">
+            <h2 className="text-2xl lg:text-4xl leading-none">
+              Package Excludes
+            </h2>
+            <ul className="list-disc pl-6 lg:pl-8 text-lg text-left font-[Poppins] text-stone-600 max-w-2xl">
+              <li>Air/train fare</li>
+              <li>Expenses for optional activities</li>
+              <li>Items of personal nature like portage, tips, laundry</li>
+              <li>
+                Any unforeseen expenses due to natural calamities, delay, or
+                strike
+              </li>
+              <li>Additional meals other than mentioned</li>
+              <li>Anything not mentioned in Inclusions</li>
+              <li>5% GST</li>
+            </ul>
+          </div>
 
-        <form
-          onSubmit={handleSubmit}
-          className="w-full lg:w-[60%] bg-stone-800/10 mt-2 p-6 rounded-md flex flex-col gap-4"
-        >
-          <h2 className="text-lg mb-2 text-left lg:text-center">
-            Get This Package
-          </h2>
-          <input
-            type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            placeholder="Your Name"
-            required
-            className="p-4 rounded-md border font-medium font-[Poppins] border-stone-300"
-          />
-          <input
-            type="tel"
-            name="phone"
-            value={formData.phone}
-            onChange={handleChange}
-            placeholder="Phone Number"
-            required
-            className="p-4 rounded-md border font-medium font-[Poppins] border-stone-300"
-          />
-          <input
-            type="number"
-            name="people"
-            value={formData.people}
-            onChange={handleChange}
-            placeholder="No. of People"
-            required
-            className="p-4 rounded-md border font-medium font-[Poppins] border-stone-300"
-          />
-          <button
-            type="submit"
-            className="bg-stone-800 text-white px-6 p-4 text-sm rounded-md"
+          <div className="text-lg lg:text-2xl leading-none lg:w-[70%]">
+            Starting from <span className="text-green-600">₹5499/-</span>
+          </div>
+
+          <form
+            onSubmit={handleSubmit}
+            className="w-full lg:w-[60%] bg-stone-800/10 mt-2 p-6 rounded-md flex flex-col gap-4"
           >
-            Book Your Seat
-          </button>
-        </form>
+            <h2 className="text-lg mb-2 text-left lg:text-center">
+              Get This Package
+            </h2>
+            <input
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              placeholder="Your Name"
+              required
+              className="p-4 rounded-md border font-medium font-[Poppins] border-stone-300"
+            />
+            <input
+              type="tel"
+              name="phone"
+              value={formData.phone}
+              onChange={handleChange}
+              placeholder="Phone Number"
+              required
+              className="p-4 rounded-md border font-medium font-[Poppins] border-stone-300"
+            />
+            <input
+              type="number"
+              name="people"
+              value={formData.people}
+              onChange={handleChange}
+              placeholder="No. of People"
+              required
+              className="p-4 rounded-md border font-medium font-[Poppins] border-stone-300"
+            />
+            <button
+              type="submit"
+              className="bg-stone-800 text-white px-6 p-4 text-sm rounded-md"
+            >
+              Book Your Seat
+            </button>
+          </form>
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </>
   );
 };
 

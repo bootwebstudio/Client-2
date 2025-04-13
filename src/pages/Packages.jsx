@@ -85,50 +85,78 @@ const packages = [
 ];
 const Packages = () => {
   return (
-    <div className="w-full h-full font-[Boldonse] text-stone-800 bg-white">
-      <Navbar />
-      <div className="w-full p-10 px-6 lg:p-12 flex flex-col gap-8 lg:gap-12">
-        <h2 className="text-2xl lg:text-4xl font-bold text-center leading-none">
-          ALL PACKAGES
-        </h2>
+    <>
+      <Helmet>
+        <title>Best Tour Packages from RK Travels Sahab - Book Now</title>
+        <meta
+          name="description"
+          content="Explore 8 handpicked travel packages including Manali, Shimla, Goa, Nainital, Kashmir, and more. Affordable prices, great comfort, and expert planning with RK Travels Sahab."
+        />
+        <meta
+          name="keywords"
+          content="Manali Tour Package, Shimla Travel Deals, Goa Holiday Package, Nainital Budget Trip, Kashmir Tour Booking, Uttarakhand Package, Rishikesh Haridwar Travel, RK Travels Sahab"
+        />
+        <meta name="author" content="RK Travels Sahab" />
+        <link rel="canonical" href="https://yourdomain.com/packages" />
+        <meta
+          property="og:title"
+          content="Explore India's Best Tour Packages with RK Travels Sahab"
+        />
+        <meta
+          property="og:description"
+          content="Affordable and curated travel experiences to Manali, Goa, Shimla, Kashmir and more. Trusted by travelers for over 3 years."
+        />
+        <meta property="og:url" content="https://yourdomain.com/packages" />
+        <meta property="og:type" content="website" />
+      </Helmet>
+      
+      <div className="w-full h-full font-[Boldonse] text-stone-800 bg-white">
+        <Navbar />
+        <div className="w-full p-10 px-6 lg:p-12 flex flex-col gap-8 lg:gap-12">
+          <h2 className="text-2xl lg:text-4xl font-bold text-center leading-none">
+            ALL PACKAGES
+          </h2>
 
-        <div className="pt-1.5 lg:pt-0 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8 lg:gap-12">
-          {packages.map((pkg, index) => (
-            <Link to={pkg.link} key={index}>
-              <div className="w-full h-[35vh] lg:h-[40vh] rounded-xl overflow-hidden">
-                <img
-                  src={pkg.image}
-                  alt={pkg.title}
-                  loading="lazy"
-                  className="w-full h-full object-cover object-center"
-                />
-              </div>
-              <div className="pt-4 px-0 flex gap-2 flex-col font-[Poppins]">
-                <h2 className="text-xl font-bold leading-none">{pkg.title}</h2>
-                <h2 className="p-0.5 px-0 font-semibold leading-none">
-                  {pkg.duration}
-                </h2>
-                <div className="flex gap-6 justify-between">
-                  <div className="flex gap-[4px] items-center">
-                    <span className="font-bold">{`₹${pkg.price}/person`}</span>
-                    <span className="font-medium">starting</span>
-                  </div>
-                  <div className="flex gap-[4px] items-center justify-center">
-                    <span className="leading-none text-amber-400">
-                      <i className="ri-star-fill"></i>
-                    </span>
-                    <span className="font-medium leading-none">
-                      {pkg.rating}
-                    </span>
+          <div className="pt-1.5 lg:pt-0 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8 lg:gap-12">
+            {packages.map((pkg, index) => (
+              <Link to={pkg.link} key={index}>
+                <div className="w-full h-[35vh] lg:h-[40vh] rounded-xl overflow-hidden">
+                  <img
+                    src={pkg.image}
+                    alt={pkg.title}
+                    loading="lazy"
+                    className="w-full h-full object-cover object-center"
+                  />
+                </div>
+                <div className="pt-4 px-0 flex gap-2 flex-col font-[Poppins]">
+                  <h2 className="text-xl font-bold leading-none">
+                    {pkg.title}
+                  </h2>
+                  <h2 className="p-0.5 px-0 font-semibold leading-none">
+                    {pkg.duration}
+                  </h2>
+                  <div className="flex gap-6 justify-between">
+                    <div className="flex gap-[4px] items-center">
+                      <span className="font-bold">{`₹${pkg.price}/person`}</span>
+                      <span className="font-medium">starting</span>
+                    </div>
+                    <div className="flex gap-[4px] items-center justify-center">
+                      <span className="leading-none text-amber-400">
+                        <i className="ri-star-fill"></i>
+                      </span>
+                      <span className="font-medium leading-none">
+                        {pkg.rating}
+                      </span>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </Link>
-          ))}
+              </Link>
+            ))}
+          </div>
         </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </>
   );
 };
 
