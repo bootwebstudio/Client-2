@@ -30,7 +30,10 @@ const About = () => {
           property="og:description"
           content="With over 3 years of experience, RK Travels Sahab offers affordable and customized tour packages to destinations like Manali, Goa, Shimla, and more."
         />
-        <meta property="og:url" content="https://www.rktravelssahab.com/about" />
+        <meta
+          property="og:url"
+          content="https://www.rktravelssahab.com/about"
+        />
         <meta property="og:type" content="website" />
       </Helmet>
 
@@ -41,10 +44,10 @@ const About = () => {
             OUR STORY
           </h2>
           <p className="text-lg font-[Poppins] text-center text-stone-600 max-w-2xl">
-            RK Travels was born from a simple idea — to make travel feel less
-            like a hassle and more like a dream come true. From weekend getaways
-            to once-in-a-lifetime adventures, we make it easy for you to
-            explore, relax, and create unforgettable memories.
+            RK Travels Sahab was born from a simple idea — to make travel feel
+            less like a hassle and more like a dream come true. From weekend
+            getaways to once-in-a-lifetime adventures, we make it easy for you
+            to explore, relax, and create unforgettable memories.
             <br />
             <br />
             With trusted service and thoughtfully designed packages, we help you
@@ -84,10 +87,10 @@ const About = () => {
             OUR PROMISE
           </h2>
           <p className="text-lg font-[Poppins] text-center text-stone-600 max-w-2xl">
-            At RK Travels, it's not just about the destination — it's about the
-            journey. We promise comfort, care, and clarity in everything we do.
-            So whether it's your first trip or your fiftieth, we'll make it feel
-            just as exciting and effortless.
+            At RK Travels Sahab, it's not just about the destination — it's
+            about the journey. We promise comfort, care, and clarity in
+            everything we do. So whether it's your first trip or your fiftieth,
+            we'll make it feel just as exciting and effortless.
             <br />
             <br />
             Let's go places, together.

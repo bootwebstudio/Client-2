@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://rktravelssahab.com/</loc>
+    <lastmod>2025-04-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Manali Tour Package -->
+  <url>
+    <loc>https://rktravelssahab.com/packages/manali</loc>
+    <lastmod>2025-04-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Shimla Tour Package -->
+  <url>
+    <loc>https://rktravelssahab.com/packages/shimla</loc>
+    <lastmod>2025-04-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Goa Tour Package -->
+  <url>
+    <loc>https://rktravelssahab.com/packages/goa</loc>
+    <lastmod>2025-04-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Nainital Tour Package -->
+  <url>
+    <loc>https://rktravelssahab.com/packages/nainital</loc>
+    <lastmod>2025-04-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Shimla - Manali Tour Package -->
+  <url>
+    <loc>https://rktravelssahab.com/packages/shimla-manali</loc>
+    <lastmod>2025-04-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Kashmir Tour Package -->
+  <url>
+    <loc>https://rktravelssahab.com/packages/kashmir</loc>
+    <lastmod>2025-04-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Uttarakhand Tour Package -->
+  <url>
+    <loc>https://rktravelssahab.com/packages/uttarakhand</loc>
+    <lastmod>2025-04-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Haridwar - Rishikesh Tour Package -->
+  <url>
+    <loc>https://rktravelssahab.com/packages/haridwar-rishkesh</loc>
+    <lastmod>2025-04-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+</urlset>
